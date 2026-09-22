@@ -57,16 +57,12 @@
 <!-- BEGIN: TopBar -->
 <div class="bg-brandDark text-white py-2 px-4 sm:px-8 text-xs font-medium border-b border-brandSlate transition-all" data-purpose="announcement-top-bar">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-3">
-<!-- Campus Switcher -->
+<!-- Campuses & Motto -->
 <div class="flex flex-wrap items-center gap-2 sm:gap-3">
 <span class="text-[11px] font-bold text-brandYellow uppercase tracking-wider flex items-center gap-1.5">
 <svg class="w-3.5 h-3.5 text-brandYellow" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
-  Campus:
+  Meanwood &amp; PHI, Lusaka
 </span>
-<div class="inline-flex p-0.5 bg-black/40 rounded-full border border-gray-700 text-xs font-bold" role="tablist">
-<button class="px-3 py-1 rounded-full transition-all duration-200 bg-brandSlate text-brandYellow shadow-sm flex items-center gap-1.5 ring-1 ring-brandYellow" data-campus-switcher="meanwood" id="top-switcher-meanwood" type="button"><span class="w-2 h-2 rounded-full bg-brandYellow animate-pulse"></span>Meanwood Campus</button>
-<button class="px-3 py-1 rounded-full transition-all duration-200 text-gray-300 hover:text-white flex items-center gap-1.5" data-campus-switcher="phi" id="top-switcher-phi" type="button">PHI Campus</button>
-</div>
 <span class="hidden lg:inline text-gray-500">|</span>
 <span class="hidden lg:inline text-gray-300 font-normal italic" id="top-slogan">
   “Quality Education for your Education is Our Priority”
@@ -1085,7 +1081,7 @@
 </ul>
 </div>
 <!-- Meanwood Campus Contact -->
-<div class="lg:col-span-3 space-y-3 p-3 rounded-2xl bg-gray-900 border border-brandGold ring-1 ring-brandGold" id="footer-meanwood-col">
+<div class="lg:col-span-3 space-y-3 p-3 rounded-2xl bg-gray-900 border border-gray-800" id="footer-meanwood-col">
 <h4 class="text-sm font-bold text-brandYellow uppercase tracking-wider flex items-center gap-1.5">
   Meanwood Campus
   <span class="text-[10px] bg-amber-500/20 text-brandYellow px-2 py-0.5 rounded-full">Campus 1</span>
@@ -1205,84 +1201,9 @@
         viewMeanwood.classList.add('hidden');
       }
     }
-    // Also sync global top switcher
-    setGlobalCampus(campusKey);
   }
 
-  // 4. Global Campus Switcher (Meanwood vs PHI)
-  const campusData = {
-    meanwood: {
-      name: 'Meanwood Campus',
-      tag: 'Campus 1',
-      phone: '+260 955 802 016',
-      telLink: 'tel:+260955802016'
-    },
-    phi: {
-      name: 'PHI Campus',
-      tag: 'Campus 2',
-      phone: '+260 966 495 430',
-      telLink: 'tel:+260966495430'
-    }
-  };
-
-  function setGlobalCampus(campusId) {
-    const isMeanwood = campusId === 'meanwood';
-    const active = isMeanwood ? campusData.meanwood : campusData.phi;
-
-    const btnMeanwood = document.getElementById('top-switcher-meanwood');
-    const btnPhi = document.getElementById('top-switcher-phi');
-    const activeTopClass = 'px-3 py-1 rounded-full transition-all duration-200 bg-brandSlate text-brandYellow shadow-sm flex items-center gap-1.5 ring-1 ring-brandYellow';
-    const inactiveTopClass = 'px-3 py-1 rounded-full transition-all duration-200 text-gray-300 hover:text-white flex items-center gap-1.5';
-
-    if (btnMeanwood && btnPhi) {
-      if (isMeanwood) {
-        btnMeanwood.className = activeTopClass;
-        btnMeanwood.innerHTML = '<span class="w-2 h-2 rounded-full bg-brandYellow animate-pulse"></span>Meanwood Campus';
-        btnPhi.className = inactiveTopClass;
-        btnPhi.innerHTML = 'PHI Campus';
-      } else {
-        btnPhi.className = activeTopClass;
-        btnPhi.innerHTML = '<span class="w-2 h-2 rounded-full bg-brandYellow animate-pulse"></span>PHI Campus';
-        btnMeanwood.className = inactiveTopClass;
-        btnMeanwood.innerHTML = 'Meanwood Campus';
-      }
-    }
-
-    const topPhone = document.getElementById('top-campus-phone-1');
-    const topPhoneText = document.getElementById('top-phone-text-1');
-    if (topPhone && topPhoneText) {
-      topPhone.href = active.telLink;
-      topPhoneText.innerText = active.phone;
-    }
-
-    const heroBadge = document.getElementById('hero-campus-badge-name');
-    if (heroBadge) {
-      heroBadge.innerText = active.name;
-    }
-
-    // Highlight corresponding footer column
-    const footMeanwood = document.getElementById('footer-meanwood-col');
-    const footPhi = document.getElementById('footer-phi-col');
-    if (footMeanwood && footPhi) {
-      if (isMeanwood) {
-        footMeanwood.classList.add('border-brandGold', 'ring-1', 'ring-brandGold');
-        footPhi.classList.remove('border-brandGold', 'ring-1', 'ring-brandGold');
-      } else {
-        footPhi.classList.add('border-brandGold', 'ring-1', 'ring-brandGold');
-        footMeanwood.classList.remove('border-brandGold', 'ring-1', 'ring-brandGold');
-      }
-    }
-  }
-
-  document.querySelectorAll('[data-campus-switcher]').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const campus = btn.getAttribute('data-campus-switcher');
-      setGlobalCampus(campus);
-    });
-  });
-
-  // 5. Contact Tab Campus Switcher
+  // 4. Contact Tab Campus Switcher
   function setContactCampus(campusKey) {
     const isMeanwood = campusKey === 'meanwood';
     const btnMeanwood = document.getElementById('contact-btn-meanwood');
@@ -1345,7 +1266,7 @@
     ]);
   }
 
-  // 6. Accordion toggle for FAQ (Questions tab)
+  // 5. Accordion toggle for FAQ (Questions tab)
   document.addEventListener('click', function(e) {
     const btn = e.target.closest('.faq-accordion-btn');
     if (btn) {
@@ -1359,8 +1280,5 @@
       }
     }
   });
-
-  // Default campus selection
-  setGlobalCampus('meanwood');
 </script>
 </body></html>
