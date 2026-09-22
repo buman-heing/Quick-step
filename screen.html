@@ -1,0 +1,1393 @@
+<!DOCTYPE html><html lang="en" style="scroll-behavior: smooth;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Quick Step School Limited | Nursery &amp; Primary | Lusaka, Zambia</title>
+<!-- Tailwind CSS v3 with Forms & Container Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#111827',
+            brandSlate: '#1f2937',
+            brandGrey: '#374151',
+            brandMuted: '#4b5563',
+            brandGold: '#f59e0b',
+            brandYellow: '#eab308',
+            brandLightYellow: '#fef3c7',
+            creamBg: '#f9fafb',
+            cardBg: '#ffffff',
+            borderGrey: '#e5e7eb'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .blob-clip-hero {
+      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    }
+    /* Hide scrollbar for clean tab pill scrolling on tablets */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-creamBg text-brandGrey font-sans antialiased overflow-x-hidden flex flex-col min-h-screen">
+<!-- BEGIN: TopBar -->
+<div class="bg-brandDark text-white py-2 px-4 sm:px-8 text-xs font-medium border-b border-brandSlate transition-all" data-purpose="announcement-top-bar">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-3">
+<!-- Campus Switcher -->
+<div class="flex flex-wrap items-center gap-2 sm:gap-3">
+<span class="text-[11px] font-bold text-brandYellow uppercase tracking-wider flex items-center gap-1.5">
+<svg class="w-3.5 h-3.5 text-brandYellow" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+  Campus:
+</span>
+<div class="inline-flex p-0.5 bg-black/40 rounded-full border border-gray-700 text-xs font-bold" role="tablist">
+<button class="px-3 py-1 rounded-full transition-all duration-200 bg-brandSlate text-brandYellow shadow-sm flex items-center gap-1.5 ring-1 ring-brandYellow" data-campus-switcher="meanwood" id="top-switcher-meanwood" type="button"><span class="w-2 h-2 rounded-full bg-brandYellow animate-pulse"></span>Meanwood Campus</button>
+<button class="px-3 py-1 rounded-full transition-all duration-200 text-gray-300 hover:text-white flex items-center gap-1.5" data-campus-switcher="phi" id="top-switcher-phi" type="button">PHI Campus</button>
+</div>
+<span class="hidden lg:inline text-gray-500">|</span>
+<span class="hidden lg:inline text-gray-300 font-normal italic" id="top-slogan">
+  “Quality Education for your Education is Our Priority”
+</span>
+</div>
+<!-- Phone, Hours & Direct WhatsApp -->
+<div class="flex items-center flex-wrap gap-3 sm:gap-4 text-xs">
+<div class="flex items-center gap-2 sm:gap-3">
+<a class="hover:text-brandYellow transition-colors flex items-center gap-1 text-gray-200 font-medium" href="tel:+260955802016" id="top-campus-phone-1">
+<svg class="w-3.5 h-3.5 text-brandYellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span id="top-phone-text-1">+260 955 802 016</span>
+</a>
+<span class="text-gray-600">/</span>
+<a class="hover:text-brandYellow transition-colors hidden sm:inline text-gray-300 font-medium" href="tel:+260966495430" id="top-campus-phone-2">
+  +260 966 495 430
+</a>
+</div>
+<span class="hidden md:inline text-gray-600">|</span>
+<a class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1 rounded-full font-bold shadow-sm transition" href="https://wa.me/260955802016" rel="noopener noreferrer" target="_blank">
+<svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"></path></svg>
+  WhatsApp
+</a>
+</div>
+</div>
+</div>
+<!-- END: TopBar -->
+<!-- BEGIN: MainHeader with 9 Tabs -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between gap-4">
+<!-- Logo Container -->
+<a aria-label="Quick Step School Limited" class="flex items-center gap-3 focus:outline-none cursor-pointer flex-shrink-0" onclick="switchMainTab('home')">
+<img alt="Quick Step School Official Logo" class="h-12 sm:h-14 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WAFpVT7Sb-xwLePt3N5lbeWdYk6IFZnfACHM-joUrtlIthw247WHFQDdfSB-QFjoBmaYdP3WKVrW3xORoHzErc2LFT7lRK3h3CVWUWGToy4tlN1NZ3T7_MsWczg7BPdbH62w4ImaZiBjMS7KFGHuTTcoFIROLvUqujFWCVfp9Djddh6WPg1mV-YYTVz7itA7x5PRJAD9fccwfmgKkS2wqbJWuaaka_vs241uOP-94pl5iqOWXXaLEV3Mk">
+</a>
+<!-- Desktop & Tablet 9 Tabs Navigation -->
+<nav class="hidden xl:flex items-center space-x-1 font-bold text-xs tracking-tight text-brandGrey" id="main-nav-bar">
+<button class="nav-tab-btn px-2.5 py-1.5 rounded-lg transition-colors text-brandDark border-b-2 border-brandGold font-extrabold" data-tab-target="home" onclick="switchMainTab('home')">HOME</button>
+<button class="nav-tab-btn px-2.5 py-1.5 rounded-lg transition-colors hover:text-brandGold text-brandGrey font-bold" data-tab-target="about-us" onclick="switchMainTab('about-us')">ABOUT US</button>
+<button class="nav-tab-btn px-2.5 py-1.5 rounded-lg transition-colors hover:text-brandGold text-brandGrey font-bold" data-tab-target="campuses" onclick="switchMainTab('campuses')">CAMPUSES</button>
+<button class="nav-tab-btn px-2.5 py-1.5 rounded-lg transition-colors hover:text-brandGold text-brandGrey font-bold" data-tab-target="academics" onclick="switchMainTab('academics')">ACADEMICS</button>
+<button class="nav-tab-btn px-2.5 py-1.5 rounded-lg transition-colors hover:text-brandGold text-brandGrey font-bold" data-tab-target="school-life" onclick="switchMainTab('school-life')">SCHOOL LIFE</button>
+<button class="nav-tab-btn px-2.5 py-1.5 rounded-lg transition-colors hover:text-brandGold text-brandGrey font-bold" data-tab-target="fees" onclick="switchMainTab('fees')">FEES &amp; REQUIREMENTS</button>
+<button class="nav-tab-btn bg-brandGold hover:bg-brandYellow text-white font-extrabold px-3 py-1.5 rounded-full shadow-sm mx-1 transition transform hover:scale-105" data-tab-target="admissions" onclick="switchMainTab('admissions')">ADMISSIONS</button>
+<button class="nav-tab-btn px-2.5 py-1.5 rounded-lg transition-colors hover:text-brandGold text-brandGrey font-bold" data-tab-target="questions" onclick="switchMainTab('questions')">QUESTIONS</button>
+<button class="nav-tab-btn px-2.5 py-1.5 rounded-lg transition-colors hover:text-brandGold text-brandGrey font-bold" data-tab-target="contact" onclick="switchMainTab('contact')">CONTACT</button>
+</nav>
+<!-- Middle Screen (lg/md) scrollable tab row -->
+<div class="hidden lg:flex xl:hidden overflow-x-auto no-scrollbar py-1 space-x-1 font-bold text-xs text-brandGrey">
+<button class="nav-tab-btn whitespace-nowrap px-2 py-1 rounded text-brandDark border-b-2 border-brandGold font-extrabold" data-tab-target="home" onclick="switchMainTab('home')">HOME</button>
+<button class="nav-tab-btn whitespace-nowrap px-2 py-1 rounded hover:text-brandGold text-brandGrey" data-tab-target="about-us" onclick="switchMainTab('about-us')">ABOUT US</button>
+<button class="nav-tab-btn whitespace-nowrap px-2 py-1 rounded hover:text-brandGold text-brandGrey" data-tab-target="campuses" onclick="switchMainTab('campuses')">CAMPUSES</button>
+<button class="nav-tab-btn whitespace-nowrap px-2 py-1 rounded hover:text-brandGold text-brandGrey" data-tab-target="academics" onclick="switchMainTab('academics')">ACADEMICS</button>
+<button class="nav-tab-btn whitespace-nowrap px-2 py-1 rounded hover:text-brandGold text-brandGrey" data-tab-target="school-life" onclick="switchMainTab('school-life')">SCHOOL LIFE</button>
+<button class="nav-tab-btn whitespace-nowrap px-2 py-1 rounded hover:text-brandGold text-brandGrey" data-tab-target="fees" onclick="switchMainTab('fees')">FEES</button>
+<button class="nav-tab-btn whitespace-nowrap px-2.5 py-1 rounded-full bg-brandGold text-white font-extrabold" data-tab-target="admissions" onclick="switchMainTab('admissions')">ADMISSIONS</button>
+<button class="nav-tab-btn whitespace-nowrap px-2 py-1 rounded hover:text-brandGold text-brandGrey" data-tab-target="questions" onclick="switchMainTab('questions')">QUESTIONS</button>
+<button class="nav-tab-btn whitespace-nowrap px-2 py-1 rounded hover:text-brandGold text-brandGrey" data-tab-target="contact" onclick="switchMainTab('contact')">CONTACT</button>
+</div>
+<!-- Mobile Dropdown / Quick CTA -->
+<div class="flex items-center gap-2 lg:hidden">
+<button class="bg-brandGold text-white font-extrabold text-xs px-3 py-1.5 rounded-full shadow" onclick="switchMainTab('admissions')">APPLY NOW</button>
+<button aria-label="Open navigation menu" class="p-2 rounded-lg text-brandDark hover:bg-gray-100 focus:outline-none" id="mobile-menu-toggle" type="button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<!-- Mobile Nav Collapsible Menu (All 9 Tabs) -->
+<div class="hidden lg:hidden bg-white border-b border-gray-200 px-4 py-3 space-y-1 text-sm font-bold shadow-lg" id="mobile-nav-panel">
+<button class="block w-full text-left py-2 px-3 rounded hover:bg-gray-50 text-brandDark" onclick="switchMainTab('home'); toggleMobileMenu()">1. HOME</button>
+<button class="block w-full text-left py-2 px-3 rounded hover:bg-gray-50 text-brandGrey" onclick="switchMainTab('about-us'); toggleMobileMenu()">2. ABOUT US</button>
+<button class="block w-full text-left py-2 px-3 rounded hover:bg-gray-50 text-brandGrey" onclick="switchMainTab('campuses'); toggleMobileMenu()">3. CAMPUSES</button>
+<button class="block w-full text-left py-2 px-3 rounded hover:bg-gray-50 text-brandGrey" onclick="switchMainTab('academics'); toggleMobileMenu()">4. ACADEMICS</button>
+<button class="block w-full text-left py-2 px-3 rounded hover:bg-gray-50 text-brandGrey" onclick="switchMainTab('school-life'); toggleMobileMenu()">5. SCHOOL LIFE</button>
+<button class="block w-full text-left py-2 px-3 rounded hover:bg-gray-50 text-brandGrey" onclick="switchMainTab('fees'); toggleMobileMenu()">6. FEES &amp; REQUIREMENTS</button>
+<button class="block w-full text-left py-2 px-3 rounded bg-amber-50 text-brandGold font-extrabold" onclick="switchMainTab('admissions'); toggleMobileMenu()">7. ADMISSIONS (Apply Now)</button>
+<button class="block w-full text-left py-2 px-3 rounded hover:bg-gray-50 text-brandGrey" onclick="switchMainTab('questions'); toggleMobileMenu()">8. QUESTIONS (FAQ)</button>
+<button class="block w-full text-left py-2 px-3 rounded hover:bg-gray-50 text-brandGrey" onclick="switchMainTab('contact'); toggleMobileMenu()">9. CONTACT</button>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- ========================================== -->
+<!-- TAB 1: HOME                                -->
+<!-- ========================================== -->
+<main class="tab-content flex-grow active" id="tab-home">
+<!-- Hero Section -->
+<section class="relative bg-gradient-to-b from-[#FFFDF7] via-white to-gray-50 pt-10 pb-16 lg:pt-16 lg:pb-24 overflow-hidden border-b border-gray-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-300 px-4 py-1.5 rounded-full text-xs font-bold text-amber-900 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span>
+  Admissions Open • Nursery to Grade 7 | Government Curriculum
+</div>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-brandDark leading-tight tracking-tight">
+  We Prepare Your <br>
+<span class="text-brandGold relative inline-block">
+    Child
+    <svg class="absolute -bottom-2 left-0 w-full" fill="none" preserveAspectRatio="none" viewBox="0 0 100 12">
+<path d="M0,8 Q50,0 100,8" stroke="#F59E0B" stroke-linecap="round" stroke-width="4"></path>
+</svg>
+</span> 
+  For Life
+</h1>
+<p class="text-base sm:text-lg text-brandMuted font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed">
+<strong>Quick Step School Limited</strong> provides nurturing, foundational education across our two premier Lusaka campuses in <strong>Meanwood</strong> and <strong>PHI</strong>.
+</p>
+<!-- Motto Callout -->
+<div class="p-4 bg-gray-100 border-l-4 border-brandGold rounded-r-xl max-w-lg mx-auto lg:mx-0 text-left">
+<p class="text-xs font-bold text-brandDark uppercase tracking-wider">Our Guiding Motto</p>
+<p class="text-sm italic font-serif text-brandGrey font-semibold">“Quality Education for your Education is Our Priority”</p>
+<p class="text-xs text-brandMuted mt-1">What makes our school different: <strong class="text-brandDark">Quality Education</strong></p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+<button class="px-7 py-3 rounded-full bg-brandGold hover:bg-brandYellow text-white font-extrabold text-sm shadow-md transition transform hover:-translate-y-0.5" onclick="switchMainTab('admissions')">
+  Apply Now
+</button>
+<button class="px-7 py-3 rounded-full border-2 border-brandDark text-brandDark hover:bg-brandDark hover:text-white font-bold text-sm transition" onclick="switchMainTab('contact')">
+  Enquire Now
+</button>
+<a class="px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center gap-2 shadow transition" href="https://wa.me/260955802016" rel="noopener noreferrer" target="_blank">
+  WhatsApp (+260955802016)
+</a>
+</div>
+<!-- Trust Indicators -->
+<div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-brandMuted font-semibold">
+<span class="flex items-center gap-1.5 text-brandDark">
+<span class="w-2.5 h-2.5 rounded-full bg-brandGold"></span>
+  100% Grade 7 National Exam Pass Focus
+</span>
+<span class="flex items-center gap-1.5 text-brandDark">
+<span class="w-2.5 h-2.5 rounded-full bg-brandGold"></span>
+  Registered ECZ Primary Centre
+</span>
+</div>
+</div>
+<!-- Hero Graphic Column with Classroom Photo -->
+<div class="lg:col-span-6 relative flex justify-center items-center">
+<div class="w-72 h-72 sm:w-96 sm:h-96 lg:w-[440px] lg:h-[440px] bg-gradient-to-tr from-amber-500 via-brandGold to-yellow-400 blob-clip-hero p-3.5 shadow-2xl flex items-center justify-center relative">
+<div class="w-full h-full rounded-[45%_55%_65%_35%/50%_50%_50%_50%] overflow-hidden bg-white relative">
+<img alt="Quick Step School classroom learners" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8KwFgyXvqvziBRiUmmOVHsCkCxGH5yWv51rJSpmm7YwGa1LP_4LXEYYoL1pmKN3_xJQTsoLQnZhIpRc-TIM2_yonkvujHrE0-7dH8To2xOfXk0cn0DKtksZbB86QsUVC8G5Pzo_IkbH_CRZG-RBZr-DbTgg24E59wXgieEcOAQYKM2s1imf4ZcmUa2nQm0D31cPJ8jDnBbdqXZilrfg67HRnKAbvrFWewXRi4ncT40hP68Ey6EEPi1d3C-Qd-PduQ1Q">
+</div>
+<div class="absolute -bottom-4 -left-4 bg-white p-3.5 rounded-2xl shadow-xl border border-gray-200 flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-brandGold font-black text-lg">
+  100%
+</div>
+<div>
+<p class="text-xs font-bold text-brandDark">Grade 7 Pass Rate</p>
+<p class="text-[11px] text-brandMuted">ECZ National Examinations</p>
+</div>
+</div>
+<div class="absolute top-6 -right-4 bg-brandDark text-white px-4 py-2 rounded-2xl shadow-xl text-center border-2 border-brandGold">
+<p class="text-xs font-extrabold text-brandYellow uppercase" id="hero-campus-badge-name">Meanwood Campus</p>
+<p class="text-[10px] text-gray-300">Lusaka Campuses</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Highlights / Why Choose Us -->
+<section class="py-14 bg-white border-b border-gray-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-amber-50 px-3.5 py-1 rounded-full border border-amber-200">Why Families Trust Us</span>
+<h2 class="text-2xl sm:text-4xl font-black text-brandDark mt-2">Quality Foundations from Day One</h2>
+<p class="text-xs sm:text-sm text-brandMuted mt-2">Equipping young learners in Meanwood and PHI with academic confidence, discipline, and strong moral roots.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-gray-50 border border-gray-200 rounded-3xl p-6 text-center hover:border-brandGold transition shadow-sm group">
+<div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-3 text-brandGold font-bold group-hover:scale-110 transition">🎒</div>
+<h3 class="text-base font-black text-brandDark mb-1">Nursery to Grade 7</h3>
+<p class="text-xs text-brandMuted leading-relaxed">Comprehensive learning paths from early baby class through primary exit exams.</p>
+</div>
+<div class="bg-gray-50 border border-gray-200 rounded-3xl p-6 text-center hover:border-brandGold transition shadow-sm group">
+<div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-3 text-brandGold font-bold group-hover:scale-110 transition">📚</div>
+<h3 class="text-base font-black text-brandDark mb-1">Government Curriculum</h3>
+<p class="text-xs text-brandMuted leading-relaxed">Standard Ministry of Education ECZ curriculum taught by passionate, qualified educators.</p>
+</div>
+<div class="bg-gray-50 border border-gray-200 rounded-3xl p-6 text-center hover:border-brandGold transition shadow-sm group">
+<div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-3 text-brandGold font-bold group-hover:scale-110 transition">🚌</div>
+<h3 class="text-base font-black text-brandDark mb-1">Safe Bus Service</h3>
+<p class="text-xs text-brandMuted leading-relaxed">Door-to-door and strategic pickup routes across Lusaka East, PHI, Chainama &amp; surrounds.</p>
+</div>
+<div class="bg-gray-50 border border-gray-200 rounded-3xl p-6 text-center hover:border-brandGold transition shadow-sm group">
+<div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-3 text-brandGold font-bold group-hover:scale-110 transition">📖</div>
+<h3 class="text-base font-black text-brandDark mb-1">Daily Extra Lessons</h3>
+<p class="text-xs text-brandMuted leading-relaxed">Targeted afternoon revision classes to make sure no student is left behind.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- TAB 2: ABOUT US                            -->
+<!-- ========================================== -->
+<main class="tab-content flex-grow" id="tab-about-us">
+<section class="relative bg-brandDark text-white py-14 lg:py-20 px-4 border-b-4 border-brandGold overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-25">
+<img alt="Quick Step School Campus" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkNbrGdHx-MxkgnIjHcmQQIoAMYXA7_TaY0xCBDQg_cXJ9ldpd30uxtWo4t9ZFHAifVRP5lOsxRq8uCF_TghxeH_vgDMKLLXtSVkH57u2TsSCevrkR8KhHhWXdb3RY9f9dXK92ry8O9raYhj-tmd_MTkS2enRaCB6XPBQ_nywM8E8-r_JhphFdzN1NBfhVCdU0c_d8NCbshKFK6KjfO8uDzEDeLfwoM3BnySiOWGZU180ED5v-IDYgfY9WbDg8c4PuEg">
+</div>
+<div class="max-w-5xl mx-auto text-center relative z-10 space-y-3">
+<span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase bg-brandSlate border border-gray-700 text-brandYellow">Our Heritage &amp; Vision</span>
+<h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight">ABOUT QUICK STEP SCHOOL</h1>
+<p class="text-brandGold font-serif italic text-base sm:text-xl font-medium max-w-2xl mx-auto leading-relaxed">“Quality Education for your Education is Our Priority”</p>
+<div class="pt-2 flex justify-center gap-3">
+<button class="px-6 py-2.5 rounded-full bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs shadow-md transition transform hover:-translate-y-0.5" onclick="switchMainTab('admissions')">Enrol Your Child</button>
+<button class="px-6 py-2.5 rounded-full border border-white/40 hover:bg-white hover:text-brandDark text-white font-bold text-xs transition" onclick="switchMainTab('campuses')">View Campuses</button>
+</div>
+</div>
+</section>
+<!-- Visual 3 Pillars Cards -->
+<section class="py-12 bg-white border-b border-gray-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-gradient-to-b from-gray-50 to-white rounded-3xl p-6 border-2 border-brandDark shadow-sm hover:border-brandGold transition text-center group">
+<div class="w-14 h-14 mx-auto mb-4 bg-brandGold text-white rounded-2xl flex items-center justify-center text-2xl shadow group-hover:scale-105 transition">🎒</div>
+<span class="text-[10px] font-black uppercase tracking-wider text-brandGold bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Classes Offered</span>
+<h3 class="text-xl font-black text-brandDark mt-3 mb-1.5">NURSERY – GRADE 7</h3>
+<p class="text-xs text-brandMuted leading-relaxed">Foundational early childhood development directly through Grade 7 primary completion with certified tutors.</p>
+</div>
+<div class="bg-gradient-to-b from-gray-50 to-white rounded-3xl p-6 border-2 border-brandGold shadow-sm hover:scale-105 transition text-center group">
+<div class="w-14 h-14 mx-auto mb-4 bg-brandDark text-brandYellow rounded-2xl flex items-center justify-center text-2xl shadow group-hover:scale-105 transition">📚</div>
+<span class="text-[10px] font-black uppercase tracking-wider text-brandDark bg-amber-100 px-3 py-1 rounded-full">National Standard</span>
+<h3 class="text-xl font-black text-brandDark mt-3 mb-1.5">GOVERNMENT CURRICULUM</h3>
+<p class="text-xs text-brandMuted leading-relaxed">Certified standard syllabus with dedicated 100% focus on ECZ Grade 7 national examinations.</p>
+</div>
+<div class="bg-gradient-to-b from-gray-50 to-white rounded-3xl p-6 border-2 border-brandDark shadow-sm hover:border-brandGold transition text-center group">
+<div class="w-14 h-14 mx-auto mb-4 bg-brandGold text-white rounded-2xl flex items-center justify-center text-2xl shadow group-hover:scale-105 transition">📍</div>
+<span class="text-[10px] font-black uppercase tracking-wider text-brandGold bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Lusaka Campuses</span>
+<h3 class="text-xl font-black text-brandDark mt-3 mb-1.5">2 LUSAKA CAMPUSES</h3>
+<p class="text-xs text-brandMuted leading-relaxed">Two strategic hubs situated in Meanwood (Kwamwena) and PHI (Off Chainama Road).</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Guiding Philosophy -->
+<section class="py-12 bg-gray-50 border-b border-gray-200">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-white px-3 py-1 rounded-full border border-gray-200">Our Guiding Philosophy</span>
+<h2 class="text-2xl sm:text-3xl font-black text-brandDark">Dedicated to Every Child’s Holistic Growth</h2>
+<p class="text-xs sm:text-sm text-brandGrey leading-relaxed max-w-2xl mx-auto">
+      At Quick Step School Limited, we believe that education begins with genuine care. In a disciplined yet encouraging atmosphere, our teachers nurture curiosity, self-confidence, and Christian moral values. We uphold high academic rigor while ensuring children play and grow socially.
+    </p>
+</div>
+</section>
+<!-- Photo strip / Visual Cards -->
+<section class="py-12 bg-white border-b border-gray-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm group">
+<div class="h-56 overflow-hidden relative">
+<img alt="Dedicated Teachers" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAT_yqIPaLMhZMRuWA5ZVd1LDb3n_IIE83kDsDXI40cqbG9FqHozxc-0ewJo72AvYUDtTGC5kSie2KXgWhG7xnn7cJcvWLVIPw4wfI9Egz0w9QILr3GXBI188ob1xvp6C2OihmYMLZMREUchhLlAHDfecpylCRz6vjDVt0b-boLvvMDrsj679sasRIpCK4tWOt2g6oMlwiCxekFM_9_2Eghvu1HhAMcWTIPfX3OqyHT07UBMoiLBUhhj_QkiJq5jmIQw">
+<span class="absolute bottom-3 left-3 bg-brandGold text-white text-[10px] font-bold px-3 py-1 rounded-full">Dedicated Teachers</span>
+</div>
+<div class="p-4 text-center">
+<h4 class="font-black text-brandDark text-sm">Qualified &amp; Caring Educators</h4>
+<p class="text-xs text-brandMuted mt-1">Experienced staff committed to individual student tracking and guidance.</p>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm group">
+<div class="h-56 overflow-hidden relative">
+<img alt="Well-Equipped Classrooms" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3BXqfidK03O7w5NFmk994OZsE4uzJorQVRSixSHaiRXLjNUTVgFCbVYIiY0_cI2tdbno8i5AWVn50CpEUJBzGlCtafT9N0gIIlyO0JXvhQ2wSVIDn4hQePTJl39cAyTSfITz-sJxq3VvFkaKSJprvS0VGyFgziL1JfZ_5ptZaV8aI2z9lfunRQ4PX2ndkN_egY7sM-_5FOfYdoS_vqzmqx3_-SAllvjC6QkA0jqr-qJNRofWe8LbG">
+<span class="absolute bottom-3 left-3 bg-brandDark text-brandYellow text-[10px] font-bold px-3 py-1 rounded-full">Classrooms</span>
+</div>
+<div class="p-4 text-center">
+<h4 class="font-black text-brandDark text-sm">Well-Equipped Classrooms</h4>
+<p class="text-xs text-brandMuted mt-1">Spacious, brightly lit desks, charts, and materials for focused daily study.</p>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm group">
+<div class="h-56 overflow-hidden relative">
+<img alt="Safe &amp; Secure Environment" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG2icDgoYF-_dmR1j88WLPNBB7MzoVrQOr5GbdksF0dBI7TJbBuEjBafI_nlIlTVDXoavhfE9S4YIDlfAcIYE9hCuBTSdFplj9-Txjzwmr7j2dkU77KVNrkW6E4A05ZelmUBIrM2FXbO2A9-G-I1KsBplcdatjJlnR7l54u-_F632uYgP792nJt1v-2y6ua0_z7AHUE0QhDHE85XBvYNPrO9HMTvp-YZRgAjhh2GmDWq93Hz1wQkOh">
+<span class="absolute bottom-3 left-3 bg-brandDark text-brandYellow text-[10px] font-bold px-3 py-1 rounded-full">Secure Campus</span>
+</div>
+<div class="p-4 text-center">
+<h4 class="font-black text-brandDark text-sm">Safe &amp; Secure Environment</h4>
+<p class="text-xs text-brandMuted mt-1">Gated perimeter wall, clean sanitation, supervised sports, and on-site tuck-shop.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- What Makes Us Different -->
+<section class="py-12 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-8">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-amber-50 px-3.5 py-1 rounded-full border border-amber-200">The Quick Step Difference</span>
+<h2 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">What Makes Us Different? <span class="text-brandGold">Quality Education</span></h2>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 text-center shadow-sm hover:border-brandGold transition">
+<div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center text-brandGold font-bold text-lg mx-auto mb-2">🚌</div>
+<h4 class="font-black text-brandDark text-xs sm:text-sm">School Bus Service</h4>
+<p class="text-[11px] text-brandMuted mt-1">Daily pick-up &amp; drop-off</p>
+</div>
+<div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 text-center shadow-sm hover:border-brandGold transition">
+<div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center text-brandGold font-bold text-lg mx-auto mb-2">🥪</div>
+<h4 class="font-black text-brandDark text-xs sm:text-sm">On-Site Tuck-shop</h4>
+<p class="text-[11px] text-brandMuted mt-1">Clean hygienic snacks</p>
+</div>
+<div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 text-center shadow-sm hover:border-brandGold transition">
+<div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center text-brandGold font-bold text-lg mx-auto mb-2">⚽</div>
+<h4 class="font-black text-brandDark text-xs sm:text-sm">Sports &amp; Athletics</h4>
+<p class="text-[11px] text-brandMuted mt-1">Weekly drills &amp; leagues</p>
+</div>
+<div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 text-center shadow-sm hover:border-brandGold transition">
+<div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center text-brandGold font-bold text-lg mx-auto mb-2">📖</div>
+<h4 class="font-black text-brandDark text-xs sm:text-sm">Daily Extra Lessons</h4>
+<p class="text-[11px] text-brandMuted mt-1">Targeted afternoon revision</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- TAB 3: CAMPUSES                            -->
+<!-- ========================================== -->
+<main class="tab-content flex-grow" id="tab-campuses">
+<section class="relative bg-brandDark text-white py-14 lg:py-20 px-4 border-b-4 border-brandGold overflow-hidden">
+<div class="max-w-5xl mx-auto text-center relative z-10 space-y-3">
+<span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase bg-brandSlate border border-gray-700 text-brandYellow">Lusaka Campuses</span>
+<h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">OUR CAMPUSES</h1>
+<p class="text-sm sm:text-base text-gray-300 font-medium">Strategic, accessible locations serving Lusaka East and Chainama areas.</p>
+</div>
+</section>
+<section class="py-12 bg-gray-50 border-b border-gray-200">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-8">
+<span class="text-xs font-bold uppercase tracking-wider text-brandGold bg-white px-3 py-1 rounded-full border border-gray-200">Campus Switcher</span>
+<h2 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">Select a Campus to View Details</h2>
+<div class="mt-4 inline-flex p-1 bg-white rounded-2xl border border-gray-300 shadow-sm gap-1" role="tablist">
+<button class="px-6 py-2.5 rounded-xl font-black text-xs sm:text-sm transition-all duration-200 bg-brandDark text-brandYellow shadow-sm" id="campus-tab-meanwood-btn" onclick="showCampusDetail('meanwood')" type="button">MEANWOOD CAMPUS</button>
+<button class="px-6 py-2.5 rounded-xl font-black text-xs sm:text-sm transition-all duration-200 text-brandGrey hover:text-brandDark" id="campus-tab-phi-btn" onclick="showCampusDetail('phi')" type="button">PHI CAMPUS</button>
+</div>
+</div>
+<!-- Meanwood Campus Card View -->
+<div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-brandGold shadow-md" id="view-meanwood-panel">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-4 border-b border-gray-100 gap-3">
+<div>
+<span class="text-xs font-black text-brandGold uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Kwamwena Environs</span>
+<h3 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">Meanwood Campus</h3>
+</div>
+<div class="flex items-center gap-2">
+<a class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-full shadow flex items-center gap-1.5 transition" href="https://wa.me/260955802016" target="_blank">WhatsApp Meanwood</a>
+<a class="px-4 py-2 bg-brandDark hover:bg-brandSlate text-white font-bold text-xs rounded-full transition" href="tel:+260955802016">Call +260 955 802 016</a>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-xs sm:text-sm">
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+<strong class="text-brandDark block mb-1">📍 Physical Address:</strong>
+<span>Plot 4812, Kwamwena / Meanwood Ibex Environs, Lusaka East, Zambia</span>
+</div>
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+<strong class="text-brandDark block mb-1">⏰ Operating School Hours:</strong>
+<span>08:00 – 15:00 Hours (Monday – Friday)</span>
+</div>
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 md:col-span-2">
+<strong class="text-brandDark block mb-1">🚌 Transport Routes Covered:</strong>
+<span>Meanwood Kwamwena, Meanwood Ndeke, Vorna Valley, Avondale, and surrounding neighborhoods.</span>
+</div>
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 md:col-span-2">
+<strong class="text-brandDark block mb-1">🏫 Facilities at Meanwood:</strong>
+<span>Spacious modern classrooms, dedicated Early Learning / Nursery department, sports grounds, secured gated yard, tuck-shop, and designated school bus pick-up bay.</span>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-gray-100 flex flex-wrap gap-3">
+<button class="px-6 py-2.5 bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs rounded-full shadow transition" onclick="switchMainTab('admissions')">Apply for Meanwood Campus</button>
+<button class="px-6 py-2.5 bg-gray-100 hover:bg-gray-200 text-brandDark font-bold text-xs rounded-full transition" onclick="switchMainTab('contact')">Get Driving Directions</button>
+</div>
+</div>
+<!-- PHI Campus Card View -->
+<div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-brandGold shadow-md hidden" id="view-phi-panel">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-4 border-b border-gray-100 gap-3">
+<div>
+<span class="text-xs font-black text-brandGold uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Chainama Environs</span>
+<h3 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">PHI Campus</h3>
+</div>
+<div class="flex items-center gap-2">
+<a class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-full shadow flex items-center gap-1.5 transition" href="https://wa.me/260955802016" target="_blank">WhatsApp PHI</a>
+<a class="px-4 py-2 bg-brandDark hover:bg-brandSlate text-white font-bold text-xs rounded-full transition" href="tel:+260966495430">Call +260 966 495 430</a>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-xs sm:text-sm">
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+<strong class="text-brandDark block mb-1">📍 Physical Address:</strong>
+<span>Stand 489, PHI Main Residential Area, Off Chainama Road, Lusaka, Zambia</span>
+</div>
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
+<strong class="text-brandDark block mb-1">⏰ Operating School Hours:</strong>
+<span>08:00 – 15:00 Hours (Monday – Friday)</span>
+</div>
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 md:col-span-2">
+<strong class="text-brandDark block mb-1">🚌 Transport Routes Covered:</strong>
+<span>PHI, Chainama, Munali, Mtendere, Kaunda Square, Chelstone, and nearby estates.</span>
+</div>
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 md:col-span-2">
+<strong class="text-brandDark block mb-1">🏫 Facilities at PHI:</strong>
+<span>Primary classrooms, Examination preparation wing, tuck-shop, playground, administrative office, and verified ECZ exam centre facilities.</span>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-gray-100 flex flex-wrap gap-3">
+<button class="px-6 py-2.5 bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs rounded-full shadow transition" onclick="switchMainTab('admissions')">Apply for PHI Campus</button>
+<button class="px-6 py-2.5 bg-gray-100 hover:bg-gray-200 text-brandDark font-bold text-xs rounded-full transition" onclick="switchMainTab('contact')">Get Driving Directions</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- TAB 4: ACADEMICS                           -->
+<!-- ========================================== -->
+<main class="tab-content flex-grow" id="tab-academics">
+<section class="relative bg-brandDark text-white py-14 lg:py-20 px-4 border-b-4 border-brandGold overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-20">
+<img alt="Quick Step Learners in class" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh3UOvO1_d2uEOx-pp7cT8cygL10olYAtQn8u7Cc1x1gY7CvWFgwBX1Fyke08smoaZCtsHXkUMeAkwULxUC6ssJHOkSiLjS0Pe0xrDGJ3sSlwBRWoNdRIf0Ffzu63PLE66tqWGHU7nfUERFq1SiCIPZbaLHs2DSClaYzWR4kAuNHBnB_18kxJUSx-CvutiYbhPRhcVC9ovwbsCPFwM5995-MNly2fT-BP5B_2jZ9P3kzP15Fgmh7PzBxn5pawPs-1Pog">
+</div>
+<div class="max-w-5xl mx-auto text-center relative z-10 space-y-3">
+<span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase bg-brandSlate border border-gray-700 text-brandYellow">Excellence in Zambian Curriculum</span>
+<h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">ACADEMICS &amp; CURRICULUM</h1>
+<p class="text-sm sm:text-base text-gray-300 font-medium">Nursery • Grade 1–7 • Focused Zambian Primary Foundations</p>
+<div class="pt-2">
+<button class="px-7 py-3 rounded-full bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs shadow-md transition transform hover:-translate-y-0.5" onclick="switchMainTab('admissions')">Enroll Your Learner</button>
+</div>
+</div>
+</section>
+<!-- Structured Grade Cards -->
+<section class="py-12 bg-white border-b border-gray-200">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Nursery Card -->
+<div class="rounded-3xl p-6 bg-amber-50 border-2 border-brandGold shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-brandGold text-white flex items-center justify-center text-2xl font-black mb-3 shadow">🐣</div>
+<span class="text-[10px] font-black uppercase tracking-wider text-brandGold bg-white px-2.5 py-0.5 rounded-full border border-amber-300">Early Years</span>
+<h3 class="text-xl font-black text-brandDark mt-2 mb-1.5">NURSERY</h3>
+<p class="text-xs text-brandGrey leading-relaxed mb-4">Play-based early stimulation, phonics, numbers, handwriting, rhymes, and foundational motor development in a caring environment.</p>
+</div>
+<div class="pt-3 border-t border-amber-200 flex gap-2">
+<span class="bg-white text-brandDark text-[11px] font-bold px-2.5 py-1 rounded-full border border-amber-200">Baby Class</span>
+<span class="bg-white text-brandDark text-[11px] font-bold px-2.5 py-1 rounded-full border border-amber-200">Reception</span>
+</div>
+</div>
+<!-- Lower Primary Card -->
+<div class="rounded-3xl p-6 bg-gray-50 border-2 border-gray-300 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-brandDark text-brandYellow flex items-center justify-center text-2xl font-black mb-3 shadow">📘</div>
+<span class="text-[10px] font-black uppercase tracking-wider text-white bg-brandDark px-2.5 py-0.5 rounded-full">Foundation</span>
+<h3 class="text-xl font-black text-brandDark mt-2 mb-1.5">GRADES 1 – 4</h3>
+<p class="text-xs text-brandGrey leading-relaxed mb-4">Core literacy, mathematics numeracy, integrated science, social studies, creative arts, and Zambian local language fundamentals.</p>
+</div>
+<div class="pt-3 border-t border-gray-200 flex gap-2">
+<span class="bg-brandSlate text-white text-[11px] font-bold px-2.5 py-1 rounded-full">Daily Reading</span>
+<span class="bg-brandSlate text-white text-[11px] font-bold px-2.5 py-1 rounded-full">Math Drills</span>
+</div>
+</div>
+<!-- Upper Primary Card -->
+<div class="rounded-3xl p-6 bg-gray-50 border-2 border-brandDark shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-brandDark text-brandYellow flex items-center justify-center text-2xl font-black mb-3 shadow">🎓</div>
+<span class="text-[10px] font-black uppercase tracking-wider text-white bg-brandDark px-2.5 py-0.5 rounded-full">ECZ Exam Focus</span>
+<h3 class="text-xl font-black text-brandDark mt-2 mb-1.5">GRADES 5 – 7</h3>
+<p class="text-xs text-brandGrey leading-relaxed mb-4">Intensive preparation for the National Grade 7 ECZ Examination. Past papers, daily afternoon extra lessons, and individual performance tracking.</p>
+</div>
+<div class="pt-3 border-t border-gray-200 flex gap-2">
+<span class="bg-brandGold text-white text-[11px] font-black px-2.5 py-1 rounded-full">100% Pass Target</span>
+<span class="bg-brandDark text-brandYellow text-[11px] font-bold px-2.5 py-1 rounded-full">Mock Exams</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Government Curriculum Subjects -->
+<section class="py-12 bg-gray-50 border-b border-gray-200">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-xl mx-auto mb-8">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-white px-3 py-1 rounded-full border border-gray-200">Standard Syllabus</span>
+<h2 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">Government Curriculum (ECZ)</h2>
+<p class="text-xs text-brandMuted mt-1">Teaching the full curriculum approved by the Zambian Ministry of Education.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-center">
+<div class="bg-white p-3.5 rounded-2xl border border-gray-200 shadow-sm font-bold text-xs text-brandDark">
+<span class="text-xl block mb-1">📐</span> Mathematics
+      </div>
+<div class="bg-white p-3.5 rounded-2xl border border-gray-200 shadow-sm font-bold text-xs text-brandDark">
+<span class="text-xl block mb-1">📖</span> English Language
+      </div>
+<div class="bg-white p-3.5 rounded-2xl border border-gray-200 shadow-sm font-bold text-xs text-brandDark">
+<span class="text-xl block mb-1">🔬</span> Integrated Science
+      </div>
+<div class="bg-white p-3.5 rounded-2xl border border-gray-200 shadow-sm font-bold text-xs text-brandDark">
+<span class="text-xl block mb-1">🌍</span> Social Studies
+      </div>
+<div class="bg-white p-3.5 rounded-2xl border border-gray-200 shadow-sm font-bold text-xs text-brandDark">
+<span class="text-xl block mb-1">💻</span> Creative &amp; Tech (CTS)
+      </div>
+<div class="bg-white p-3.5 rounded-2xl border border-gray-200 shadow-sm font-bold text-xs text-brandDark">
+<span class="text-xl block mb-1">🇿🇲</span> Zambian Languages
+      </div>
+</div>
+</div>
+</section>
+<!-- Daily Routine Timeline -->
+<section class="py-12 bg-white border-b border-gray-200">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-gray-50 rounded-3xl p-6 sm:p-8 border-2 border-brandGold shadow-md text-center">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Visual Daily Timeline</span>
+<h3 class="text-xl sm:text-2xl font-black text-brandDark mt-2 mb-4">A Structured Day for Academic Success</h3>
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs sm:text-sm font-bold text-brandDark text-left">
+<div class="p-3 bg-white rounded-2xl border border-gray-200">
+<p class="text-brandGold font-black text-sm">08:00</p>
+<p class="mt-1">Arrival, Devotion &amp; Assembly</p>
+</div>
+<div class="p-3 bg-white rounded-2xl border border-gray-200">
+<p class="text-brandGold font-black text-sm">08:30 – 12:30</p>
+<p class="mt-1">Core Academic Instruction &amp; Recess</p>
+</div>
+<div class="p-3 bg-white rounded-2xl border border-gray-200">
+<p class="text-brandGold font-black text-sm">13:00 – 14:45</p>
+<p class="mt-1">Revision &amp; Daily Extra Lessons</p>
+</div>
+<div class="p-3 bg-white rounded-2xl border border-gray-200">
+<p class="text-brandGold font-black text-sm">15:00</p>
+<p class="mt-1">Dismissal &amp; Safe Bus Transit</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 100% Target Banner -->
+<section class="py-8 bg-brandDark text-white">
+<div class="max-w-4xl mx-auto px-4 text-center space-y-2">
+<span class="text-brandYellow text-xs font-bold uppercase tracking-wider">Exam Excellence Target</span>
+<h3 class="text-lg sm:text-2xl font-black">100% Grade 7 ECZ National Examination Target</h3>
+<p class="text-xs text-gray-300 max-w-xl mx-auto">Operating strictly under the Zambian 3-Term School Calendar with rigorous test assessments.</p>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- TAB 5: SCHOOL LIFE                         -->
+<!-- ========================================== -->
+<main class="tab-content flex-grow" id="tab-school-life">
+<section class="relative bg-brandDark text-white py-14 lg:py-20 px-4 border-b-4 border-brandGold overflow-hidden">
+<div class="max-w-5xl mx-auto text-center relative z-10 space-y-3">
+<span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase bg-brandSlate border border-gray-700 text-brandYellow">Campus Community</span>
+<h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">LIFE AT QUICK STEP</h1>
+<p class="text-sm sm:text-base text-gray-300 font-medium max-w-xl mx-auto">Vibrant balance of moral discipline, energetic sports, and focused classroom learning.</p>
+</div>
+</section>
+<section class="py-4 bg-brandGold text-brandDark shadow-sm">
+<div class="max-w-7xl mx-auto px-4 text-center font-black tracking-widest text-sm sm:text-base flex items-center justify-center gap-4">
+<span>LEARN</span>
+<span>•</span>
+<span>PLAY</span>
+<span>•</span>
+<span>GROW</span>
+</div>
+</section>
+<!-- Photo & Activity Gallery Grid -->
+<section class="py-12 bg-white border-b border-gray-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-xl mx-auto mb-8">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Photo &amp; Activity Gallery</span>
+<h2 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">Moments Across Our Campuses</h2>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200 group bg-gray-50">
+<div class="h-44 overflow-hidden">
+<img alt="Students In Class" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoe6bFGRC9qRjaiEmOUto7VWMgUopRf_6pE4wOGRL0FwgWPwA6uA1vBjxAvmgsT321mxjiLldYqjhGxUk2g9Eql6qNG4fjqvO6E4a0PUE4dBT5c_WiM4ovXizEbZV9-S6b0T1VNtzAIuShpbTR__v07ZKw0Cq3XFqCqwUSChvbv3ufA24Dz3vgzFPCtv8u637boa1wkK31Iegvub6qKpyHsGMsSidiPXUx7d3SRJwFTTJyOPF-6PZ3rk_TvJxZT3tE4Q">
+</div>
+<div class="p-2.5 text-center font-bold text-xs text-brandDark">Students In Class</div>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200 group bg-gray-50">
+<div class="h-44 overflow-hidden">
+<img alt="Classrooms" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG2icDgoYF-_dmR1j88WLPNBB7MzoVrQOr5GbdksF0dBI7TJbBuEjBafI_nlIlTVDXoavhfE9S4YIDlfAcIYE9hCuBTSdFplj9-Txjzwmr7j2dkU77KVNrkW6E4A05ZelmUBIrM2FXbO2A9-G-I1KsBplcdatjJlnR7l54u-_F632uYgP792nJt1v-2y6ua0_z7AHUE0QhDHE85XBvYNPrO9HMTvp-YZRgAjhh2GmDWq93Hz1wQkOh">
+</div>
+<div class="p-2.5 text-center font-bold text-xs text-brandDark">Safe Classrooms</div>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200 group bg-gray-50">
+<div class="h-44 overflow-hidden">
+<img alt="Teachers Mentoring" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu1gmINYpaNe4gT1dzOlCNkp720IQ9lLywhI2g1QO3_tSMIc0gRMSq7LeufwzVDQ4rwe2p5B1R_DARk5FV4x8TOSt2bZ5s1tU3WlVx8LZ2p3NNhifuDjrZtYFmnnX3wPZ6TlWRCt9OFK6uHbsA3_QcqG5-IF_M5GDKiurs3qy05v02XVUyRDyGIsg7Y8h2Y5-RmuqfPsC8XemvZrXdzZdhSG44s1OlmMKgBVatvXy1dRVqOxoAguPj">
+</div>
+<div class="p-2.5 text-center font-bold text-xs text-brandDark">Extra Lessons &amp; Tutoring</div>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200 group bg-emerald-50 flex flex-col justify-center items-center p-4">
+<div class="text-4xl mb-2">⚽</div>
+<div class="font-bold text-xs text-brandDark">Sports &amp; Athletics</div>
+<span class="text-[10px] text-brandMuted mt-1">Weekly Physical Training</span>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200 group bg-amber-50 flex flex-col justify-center items-center p-4">
+<div class="text-4xl mb-2">🏆</div>
+<div class="font-bold text-xs text-brandDark">Inter-School Matches</div>
+<span class="text-[10px] text-brandMuted mt-1">Competitions &amp; Trophies</span>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200 group bg-gray-100 flex flex-col justify-center items-center p-4">
+<div class="text-4xl mb-2">🚌</div>
+<div class="font-bold text-xs text-brandDark">School Bus Fleet</div>
+<span class="text-[10px] text-brandMuted mt-1">Reliable Daily Transit</span>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200 group bg-amber-100 flex flex-col justify-center items-center p-4">
+<div class="text-4xl mb-2">🥪</div>
+<div class="font-bold text-xs text-brandDark">Tuck-Shop &amp; Dining</div>
+<span class="text-[10px] text-brandMuted mt-1">Hygienic Snacks &amp; Meals</span>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-sm border border-gray-200 group bg-emerald-100 flex flex-col justify-center items-center p-4">
+<div class="text-4xl mb-2">🎨</div>
+<div class="font-bold text-xs text-brandDark">Creative Arts</div>
+<span class="text-[10px] text-brandMuted mt-1">Music, Rhymes &amp; Craft</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Parent Feedback Voices -->
+<section class="py-12 bg-gray-50">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-xl mx-auto mb-8">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-white px-3 py-1 rounded-full border border-gray-200">Parent Testimonials</span>
+<h2 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">Trusted by Lusaka Families</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white rounded-2xl p-6 border-2 border-brandGold shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-amber-100 text-brandGold flex-shrink-0 flex items-center justify-center font-black text-base">MB</div>
+<div class="space-y-1.5">
+<p class="text-xs text-brandGrey italic font-serif leading-relaxed">“Quick Step transformed my daughter's confidence in mathematics. The daily extra lessons make a true difference!”</p>
+<p class="text-xs font-bold text-brandDark">Mrs. M. Banda <span class="text-brandMuted font-normal">— Meanwood Campus</span></p>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-6 border-2 border-brandDark shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-brandDark text-brandYellow flex-shrink-0 flex items-center justify-center font-black text-base">CT</div>
+<div class="space-y-1.5">
+<p class="text-xs text-brandGrey italic font-serif leading-relaxed">“The bus shuttle is always on time, and teachers genuinely care about foundational phonics in nursery.”</p>
+<p class="text-xs font-bold text-brandDark">Mr. C. Tembo <span class="text-brandMuted font-normal">— PHI Campus</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- TAB 6: FEES & REQUIREMENTS                 -->
+<!-- ========================================== -->
+<main class="tab-content flex-grow" id="tab-fees">
+<section class="relative bg-brandDark text-white py-14 lg:py-20 px-4 border-b-4 border-brandGold overflow-hidden">
+<div class="max-w-5xl mx-auto text-center relative z-10 space-y-3">
+<span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase bg-brandSlate border border-gray-700 text-brandYellow">Financial &amp; Supplies Transparency</span>
+<h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">FEES &amp; REQUIREMENTS</h1>
+<p class="text-sm sm:text-base text-gray-300 font-medium max-w-xl mx-auto">Affordable, transparent terms with no hidden registration costs.</p>
+</div>
+</section>
+<!-- Fee Breakdown Card -->
+<section class="py-12 bg-amber-50 border-b border-amber-200">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-brandGold shadow-lg text-center">
+<span class="text-xs font-black uppercase tracking-wider bg-brandDark text-brandYellow px-4 py-1.5 rounded-full shadow-sm">Termly School Fees</span>
+<h2 class="text-3xl sm:text-5xl font-black text-brandDark mt-4 mb-2">K800.00 <span class="text-brandGrey text-2xl font-normal">to</span> K2,100.00</h2>
+<p class="text-xs sm:text-sm text-brandMuted font-medium max-w-lg mx-auto">Per term depending on level (Nursery through Grade 7). Flexible term installments can be arranged at campus accounts desks.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 text-left max-w-xl mx-auto text-xs">
+<div class="p-3 bg-gray-50 rounded-xl border border-gray-200">
+<p class="font-bold text-brandDark">🐣 Nursery / Reception:</p>
+<p class="text-brandMuted">K800.00 – K1,200.00 per term</p>
+</div>
+<div class="p-3 bg-gray-50 rounded-xl border border-gray-200">
+<p class="font-bold text-brandDark">🎓 Grades 1 – 7 Primary:</p>
+<p class="text-brandMuted">K1,400.00 – K2,100.00 per term</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- School Requirements Checklist -->
+<section class="py-12 bg-white border-b border-gray-200">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-xl mx-auto mb-8">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Term Supplies</span>
+<h2 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">Essential School Requirements</h2>
+<p class="text-xs text-brandMuted mt-1">Pupils must submit these basic materials at term commencement:</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs font-bold text-brandDark">
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-3">
+<span class="text-2xl">📄</span>
+<div>
+<p class="font-black text-sm">Enrollment Form</p>
+<span class="text-[11px] text-brandMuted font-normal">Completed &amp; signed</span>
+</div>
+</div>
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-3">
+<span class="text-2xl">👕</span>
+<div>
+<p class="font-black text-sm">Official School Uniform</p>
+<span class="text-[11px] text-brandMuted font-normal">Grey + Yellow</span>
+</div>
+</div>
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-3">
+<span class="text-2xl">🧼</span>
+<div>
+<p class="font-black text-sm">Soap</p>
+<span class="text-[11px] text-brandMuted font-normal">Bath soap &amp; handwash</span>
+</div>
+</div>
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-3">
+<span class="text-2xl">🧻</span>
+<div>
+<p class="font-black text-sm">Toilet Tissue</p>
+<span class="text-[11px] text-brandMuted font-normal">Personal hygiene pack</span>
+</div>
+</div>
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-3">
+<span class="text-2xl">📚</span>
+<div>
+<p class="font-black text-sm">Exercise Books</p>
+<span class="text-[11px] text-brandMuted font-normal">Required ruled/squared</span>
+</div>
+</div>
+<div class="p-4 bg-gray-50 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-3">
+<span class="text-2xl">📑</span>
+<div>
+<p class="font-black text-sm">Ream of Paper</p>
+<span class="text-[11px] text-brandMuted font-normal">A4 white photocopy ream</span>
+</div>
+</div>
+</div>
+<!-- Required Documents Notice -->
+<div class="mt-6 p-4 bg-amber-50 rounded-2xl border border-amber-200 text-xs text-amber-950 font-medium flex items-center gap-3">
+<span class="text-2xl">📋</span>
+<div>
+<strong class="font-black">Required Documents for Registration:</strong>
+<p class="text-xs text-amber-900 mt-0.5">Please bring the child's <strong>Birth Certificate</strong> OR ensure the physical presence of <strong>Parents / Legal Guardians</strong> during admission processing.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Uniform Guide -->
+<section class="py-12 bg-gray-50">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="space-y-4">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-white px-3 py-1 rounded-full border border-gray-200">Dress Code Guidelines</span>
+<h2 class="text-2xl sm:text-3xl font-black text-brandDark">Grey + Yellow Official Uniform</h2>
+<p class="text-xs sm:text-sm text-brandGrey leading-relaxed">
+          Quick Step learners take pride in smart appearance. All official uniform components are purchased exclusively at the school administrative desk to maintain standard fabric shades and branding.
+        </p>
+<div class="space-y-2 text-xs text-brandGrey">
+<div class="p-3 bg-white rounded-xl border border-gray-200">
+<strong class="text-brandDark">Regular Classroom Wear:</strong> Yellow shirt/blouse with tailored grey trousers, skirts, or pinafores and school socks.
+          </div>
+<div class="p-3 bg-white rounded-xl border border-gray-200">
+<strong class="text-brandDark">Physical Education (PE) &amp; Sports:</strong> Official school tracksuit, sports shorts, and branded T-shirt.
+          </div>
+</div>
+</div>
+<div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-brandGold shadow-md space-y-4 text-center">
+<div class="w-16 h-16 bg-amber-100 text-brandGold rounded-full flex items-center justify-center text-3xl mx-auto font-black">👕</div>
+<h3 class="text-xl font-black text-brandDark">Uniforms Bought At School</h3>
+<p class="text-xs text-brandMuted">Visit Meanwood or PHI administration offices for exact measurements, sizing guides, and purchase receipts.</p>
+<button class="w-full bg-brandDark hover:bg-brandSlate text-white font-bold text-xs py-3 rounded-xl transition" onclick="switchMainTab('contact')">Contact Campus for Sizing &amp; Prices</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- TAB 7: ADMISSIONS                          -->
+<!-- ========================================== -->
+<main class="tab-content flex-grow" id="tab-admissions">
+<section class="relative bg-brandDark text-white py-14 lg:py-20 px-4 border-b-4 border-brandGold overflow-hidden">
+<div class="max-w-5xl mx-auto text-center relative z-10 space-y-3">
+<span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase bg-brandSlate border border-gray-700 text-brandYellow">Join Our Family</span>
+<h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">ADMISSIONS PROCEDURE</h1>
+<p class="text-sm sm:text-base text-gray-300 font-medium max-w-xl mx-auto">Enrolling your child for 2025 across Meanwood and PHI campuses.</p>
+</div>
+</section>
+<!-- 3-Step Simple Process -->
+<section class="py-12 bg-white border-b border-gray-200">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-xl mx-auto mb-10">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full border border-amber-200">How to Join</span>
+<h2 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">Simple 3-Step Admission</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-gray-50 rounded-2xl p-6 border-2 border-brandDark shadow-sm text-center">
+<div class="w-12 h-12 bg-brandDark text-brandYellow rounded-full flex items-center justify-center font-black text-base mx-auto mb-3">01</div>
+<h3 class="font-black text-brandDark text-base uppercase mb-1.5">Collect &amp; Fill Form</h3>
+<p class="text-xs text-brandMuted">Obtain physical enrollment papers at the campus desk or fill in our pre-admissions form below.</p>
+</div>
+<div class="bg-gray-50 rounded-2xl p-6 border-2 border-brandGold shadow-sm text-center">
+<div class="w-12 h-12 bg-brandGold text-white rounded-full flex items-center justify-center font-black text-base mx-auto mb-3">02</div>
+<h3 class="font-black text-brandDark text-base uppercase mb-1.5">Provide Requirements</h3>
+<p class="text-xs text-brandMuted">Submit birth certificate or parent verification along with term books and hygiene items.</p>
+</div>
+<div class="bg-gray-50 rounded-2xl p-6 border-2 border-brandDark shadow-sm text-center">
+<div class="w-12 h-12 bg-brandDark text-brandYellow rounded-full flex items-center justify-center font-black text-base mx-auto mb-3">03</div>
+<h3 class="font-black text-brandDark text-base uppercase mb-1.5">Uniform &amp; Start Class</h3>
+<p class="text-xs text-brandMuted">Purchase official Grey + Yellow uniform sets on campus and receive bus route scheduling.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Online Pre-Admissions Form -->
+<section class="py-12 bg-gray-50">
+<div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-brandGold shadow-md">
+<div class="text-center mb-6">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Online Pre-Registration</span>
+<h3 class="text-2xl font-black text-brandDark mt-2">Submit Admission Details</h3>
+<p class="text-xs text-brandMuted mt-1">Our administration office will follow up with you directly.</p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Application received! Quick Step School admissions team will contact you.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-bold text-brandDark mb-1">Parent / Guardian Name *</label>
+<input class="w-full text-xs rounded-xl border-gray-300 focus:border-brandGold focus:ring-brandGold py-2.5 px-3" placeholder="e.g. Mr. &amp; Mrs. Phiri" required="" type="text">
+</div>
+<div>
+<label class="block text-xs font-bold text-brandDark mb-1">Phone Number *</label>
+<input class="w-full text-xs rounded-xl border-gray-300 focus:border-brandGold focus:ring-brandGold py-2.5 px-3" placeholder="+260 9XX XXX XXX" required="" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-bold text-brandDark mb-1">Child's Full Name *</label>
+<input class="w-full text-xs rounded-xl border-gray-300 focus:border-brandGold focus:ring-brandGold py-2.5 px-3" placeholder="Learner's name" required="" type="text">
+</div>
+<div>
+<label class="block text-xs font-bold text-brandDark mb-1">Grade Applying For *</label>
+<select class="w-full text-xs rounded-xl border-gray-300 focus:border-brandGold focus:ring-brandGold py-2.5 px-3">
+<option>Nursery / Baby Class</option>
+<option>Reception</option>
+<option>Grade 1</option>
+<option>Grade 2 – Grade 4</option>
+<option>Grade 5 – Grade 7 (ECZ Exam)</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-bold text-brandDark mb-1">Target Campus *</label>
+<select class="w-full text-xs rounded-xl border-gray-300 focus:border-brandGold focus:ring-brandGold py-2.5 px-3">
+<option value="meanwood">Meanwood Campus (Kwamwena)</option>
+<option value="phi">PHI Campus (Off Chainama)</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-bold text-brandDark mb-1">Needs Bus Transport? *</label>
+<select class="w-full text-xs rounded-xl border-gray-300 focus:border-brandGold focus:ring-brandGold py-2.5 px-3">
+<option>Yes, requires school bus pickup</option>
+<option>No, self-drop and pick-up</option>
+</select>
+</div>
+</div>
+<button class="w-full bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs sm:text-sm py-3.5 rounded-xl shadow transition transform hover:-translate-y-0.5" type="submit">SUBMIT APPLICATION NOW</button>
+</form>
+<div class="mt-4 text-center">
+<a class="text-xs text-brandGold hover:underline font-bold" href="https://wa.me/260955802016" target="_blank">Questions? Chat directly on WhatsApp (+260 955 802 016)</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- TAB 8: QUESTIONS (FAQ)                     -->
+<!-- ========================================== -->
+<main class="tab-content flex-grow" id="tab-questions">
+<section class="relative bg-brandDark text-white py-14 lg:py-20 px-4 border-b-4 border-brandGold overflow-hidden">
+<div class="max-w-5xl mx-auto text-center relative z-10 space-y-3">
+<span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase bg-brandSlate border border-gray-700 text-brandYellow">Parent Enquiries</span>
+<h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">FREQUENTLY ASKED QUESTIONS</h1>
+<p class="text-sm sm:text-base text-gray-300 font-medium max-w-xl mx-auto">Everything you need to know about fees, hours, buses, and learning.</p>
+</div>
+</section>
+<!-- Accordion Section -->
+<section class="py-12 bg-white">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3.5">
+<!-- Item 1 -->
+<div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+<button class="faq-accordion-btn w-full p-4 text-left font-black text-sm text-brandDark bg-gray-50 hover:bg-amber-50/50 flex justify-between items-center transition" type="button">
+<span>What are the school fees?</span>
+<span class="text-lg font-bold text-brandGold">+</span>
+</button>
+<div class="hidden p-4 bg-white text-xs sm:text-sm text-brandMuted border-t border-gray-100 leading-relaxed">
+        School fees range from <strong>K800.00 to K2,100.00 per term</strong> depending on whether the child is in Nursery or Primary (Grades 1 to 7). Installment terms are available at our accounts office.
+      </div>
+</div>
+<!-- Item 2 -->
+<div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+<button class="faq-accordion-btn w-full p-4 text-left font-black text-sm text-brandDark bg-gray-50 hover:bg-amber-50/50 flex justify-between items-center transition" type="button">
+<span>What are the daily school hours?</span>
+<span class="text-lg font-bold text-brandGold">+</span>
+</button>
+<div class="hidden p-4 bg-white text-xs sm:text-sm text-brandMuted border-t border-gray-100 leading-relaxed">
+        School operates from <strong>08:00 to 15:00 Hours</strong>, Monday to Friday across both Meanwood and PHI campuses. This includes morning instructional lessons, snack/lunch breaks, and afternoon revision classes.
+      </div>
+</div>
+<!-- Item 3 -->
+<div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+<button class="faq-accordion-btn w-full p-4 text-left font-black text-sm text-brandDark bg-gray-50 hover:bg-amber-50/50 flex justify-between items-center transition" type="button">
+<span>What documents are required to register?</span>
+<span class="text-lg font-bold text-brandGold">+</span>
+</button>
+<div class="hidden p-4 bg-white text-xs sm:text-sm text-brandMuted border-t border-gray-100 leading-relaxed">
+        Parents must provide the learner's <strong>Birth Certificate</strong> OR the physical presence of <strong>Parents / Legal Guardians</strong> during admission, along with the completed enrollment form.
+      </div>
+</div>
+<!-- Item 4 -->
+<div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+<button class="faq-accordion-btn w-full p-4 text-left font-black text-sm text-brandDark bg-gray-50 hover:bg-amber-50/50 flex justify-between items-center transition" type="button">
+<span>Does the school provide bus transport?</span>
+<span class="text-lg font-bold text-brandGold">+</span>
+</button>
+<div class="hidden p-4 bg-white text-xs sm:text-sm text-brandMuted border-t border-gray-100 leading-relaxed">
+<strong>Yes!</strong> We have a reliable school bus fleet covering Meanwood Kwamwena, Meanwood Ndeke, Vorna Valley, Avondale, PHI, Chainama, Munali, Mtendere, Kaunda Square, and Chelstone.
+      </div>
+</div>
+<!-- Item 5 -->
+<div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+<button class="faq-accordion-btn w-full p-4 text-left font-black text-sm text-brandDark bg-gray-50 hover:bg-amber-50/50 flex justify-between items-center transition" type="button">
+<span>Do you offer extra lessons?</span>
+<span class="text-lg font-bold text-brandGold">+</span>
+</button>
+<div class="hidden p-4 bg-white text-xs sm:text-sm text-brandMuted border-t border-gray-100 leading-relaxed">
+<strong>Yes. Daily extra lessons</strong> are incorporated into our afternoon schedule to strengthen literacy, numeracy, and ECZ examination technique without overwhelming pupils.
+      </div>
+</div>
+<!-- Item 6 -->
+<div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+<button class="faq-accordion-btn w-full p-4 text-left font-black text-sm text-brandDark bg-gray-50 hover:bg-amber-50/50 flex justify-between items-center transition" type="button">
+<span>Which curriculum do you follow?</span>
+<span class="text-lg font-bold text-brandGold">+</span>
+</button>
+<div class="hidden p-4 bg-white text-xs sm:text-sm text-brandMuted border-t border-gray-100 leading-relaxed">
+        We follow the official <strong>Zambian Government / ECZ Primary Curriculum</strong>, preparing candidates thoroughly for Grade 7 national examination certification.
+      </div>
+</div>
+<!-- Item 7 -->
+<div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+<button class="faq-accordion-btn w-full p-4 text-left font-black text-sm text-brandDark bg-gray-50 hover:bg-amber-50/50 flex justify-between items-center transition" type="button">
+<span>Where do I buy uniforms?</span>
+<span class="text-lg font-bold text-brandGold">+</span>
+</button>
+<div class="hidden p-4 bg-white text-xs sm:text-sm text-brandMuted border-t border-gray-100 leading-relaxed">
+        All official Grey + Yellow uniforms, tracksuits, shorts, and branded T-shirts are sold <strong>directly at the school administration office</strong> to ensure uniform quality and standard colors.
+      </div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================== -->
+<!-- TAB 9: CONTACT                             -->
+<!-- ========================================== -->
+<main class="tab-content flex-grow" id="tab-contact">
+<section class="relative bg-brandDark text-white py-14 lg:py-20 px-4 border-b-4 border-brandGold overflow-hidden">
+<div class="max-w-5xl mx-auto text-center relative z-10 space-y-4">
+<span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase bg-brandSlate border border-gray-700 text-brandYellow">Direct Communication</span>
+<h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">GET IN TOUCH</h1>
+<p class="text-sm sm:text-base text-gray-300 font-medium max-w-xl mx-auto">Reach our admissions and administrative desks directly across Meanwood and PHI campuses.</p>
+<div class="flex flex-wrap items-center justify-center gap-3 pt-2 text-xs sm:text-sm font-bold">
+<a class="px-5 py-2.5 bg-gray-800 hover:bg-gray-700 text-brandYellow rounded-full border border-gray-700 flex items-center gap-1.5 transition" href="tel:+260955802016">📞 +260 955 802 016 (Meanwood)</a>
+<a class="px-5 py-2.5 bg-gray-800 hover:bg-gray-700 text-brandYellow rounded-full border border-gray-700 flex items-center gap-1.5 transition" href="tel:+260966495430">📞 +260 966 495 430 (PHI)</a>
+<a class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full flex items-center gap-1.5 shadow transition" href="https://wa.me/260955802016" target="_blank">Chat on WhatsApp</a>
+</div>
+</div>
+</section>
+<!-- Campus Information Toggle -->
+<section class="py-12 bg-white border-b border-gray-200">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-6">
+<span class="text-xs font-bold uppercase tracking-wider text-brandGold bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Campus Contact Details</span>
+<h2 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">CAMPUS DIRECTORY</h2>
+<div class="mt-4 inline-flex p-1 bg-white rounded-2xl border border-gray-300 shadow-sm gap-1" role="tablist">
+<button class="px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 bg-brandDark text-brandYellow shadow-sm" id="contact-btn-meanwood" onclick="setContactCampus('meanwood')" type="button">MEANWOOD</button>
+<button class="px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 text-brandGrey hover:text-brandDark" id="contact-btn-phi" onclick="setContactCampus('phi')" type="button">PHI</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 rounded-3xl p-6 sm:p-8 border-2 border-brandGold shadow-md" id="contact-campus-card">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="text-xl font-black text-brandDark" id="contact-card-name">Meanwood Campus</h3>
+<span class="bg-amber-100 text-brandGold font-bold text-xs px-3 py-1 rounded-full" id="contact-card-tag">Lusaka East</span>
+</div>
+<div class="space-y-2 text-xs sm:text-sm text-brandGrey">
+<p><strong>Address:</strong> <span id="contact-card-address">Plot 4812, Kwamwena / Meanwood Ibex Environs, Lusaka East</span></p>
+<p><strong>Phone:</strong> <a class="font-bold text-brandDark hover:text-brandGold transition" href="tel:+260955802016" id="contact-card-phone">+260 955 802 016</a></p>
+<p><strong>Hours:</strong> 08:00 – 15:00 (Mon – Fri)</p>
+<p><strong>Bus Routes:</strong> <span id="contact-card-routes">Meanwood Kwamwena, Meanwood Ndeke, Vorna Valley, Avondale</span></p>
+</div>
+<div class="pt-2 flex flex-wrap gap-2">
+<a class="px-4 py-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition" href="https://wa.me/260955802016" target="_blank">WhatsApp Campus</a>
+<a class="px-4 py-2 rounded-full bg-brandDark hover:bg-brandSlate text-white font-bold text-xs transition" href="tel:+260955802016" id="contact-card-call-btn">Call Campus</a>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-5 border border-gray-200 flex flex-col justify-between">
+<div>
+<h4 class="font-black text-brandDark text-sm mb-1.5 flex items-center gap-1.5"><span>📍</span> Campus Directions</h4>
+<p class="text-xs text-brandMuted leading-relaxed" id="contact-card-location-note">Located in Kwamwena / Meanwood Ibex area. Signposted from the main access road with easy bus access.</p>
+</div>
+<div class="mt-3 p-2.5 bg-amber-50 rounded-xl border border-amber-200 text-[11px] text-amber-900 font-medium">
+          Direct GPS coordinates &amp; turn-by-turn guidance available via our WhatsApp desk.
+        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Direct Quick Enquiry Form -->
+<section class="py-12 bg-gray-50">
+<div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-brandGold shadow-md">
+<div class="text-center mb-6">
+<span class="text-xs font-bold text-brandGold uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Enquiry Form</span>
+<h3 class="text-2xl font-black text-brandDark mt-2">Send us a message</h3>
+</div>
+<form class="space-y-3" onsubmit="event.preventDefault(); alert('Message sent! Quick Step School administration will be in touch shortly.');">
+<div>
+<label class="block text-xs font-bold text-brandDark mb-1">Your Name *</label>
+<input class="w-full text-xs rounded-xl border-gray-300 focus:border-brandGold focus:ring-brandGold py-2.5 px-3" placeholder="e.g. John Zulu" required="" type="text">
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-bold text-brandDark mb-1">Phone Number *</label>
+<input class="w-full text-xs rounded-xl border-gray-300 focus:border-brandGold focus:ring-brandGold py-2.5 px-3" placeholder="+260 9XX XXX XXX" required="" type="tel">
+</div>
+<div>
+<label class="block text-xs font-bold text-brandDark mb-1">Campus *</label>
+<select class="w-full text-xs rounded-xl border-gray-300 focus:border-brandGold focus:ring-brandGold py-2.5 px-3">
+<option value="meanwood">Meanwood Campus</option>
+<option value="phi">PHI Campus</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-brandDark mb-1">Short Message *</label>
+<textarea class="w-full text-xs rounded-xl border-gray-300 focus:border-brandGold focus:ring-brandGold py-2.5 px-3" placeholder="Ask about fee payment terms, bus route pickup points, or placement availability..." required="" rows="3"></textarea>
+</div>
+<button class="w-full bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs sm:text-sm py-3.5 rounded-xl shadow transition transform hover:-translate-y-0.5" type="submit">SEND ENQUIRY</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-brandDark text-white pt-16 pb-12 border-t-4 border-brandGold mt-auto" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-gray-800">
+<!-- School Identity -->
+<div class="lg:col-span-4 space-y-4">
+<div class="bg-white p-2.5 rounded-xl inline-block">
+<img alt="Quick Step School Limited Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WAFpVT7Sb-xwLePt3N5lbeWdYk6IFZnfACHM-joUrtlIthw247WHFQDdfSB-QFjoBmaYdP3WKVrW3xORoHzErc2LFT7lRK3h3CVWUWGToy4tlN1NZ3T7_MsWczg7BPdbH62w4ImaZiBjMS7KFGHuTTcoFIROLvUqujFWCVfp9Djddh6WPg1mV-YYTVz7itA7x5PRJAD9fccwfmgKkS2wqbJWuaaka_vs241uOP-94pl5iqOWXXaLEV3Mk">
+</div>
+<p class="text-xs text-gray-300 italic font-serif leading-relaxed">
+  “Quality Education for your Education is Our Priority”
+</p>
+<p class="text-xs text-gray-400 leading-relaxed">
+  Quick Step School Limited is a registered private educational institution operating in Lusaka, Zambia under the official Government Curriculum. Nursery and Grade 1 to 7.
+</p>
+<div class="flex items-center gap-3 text-xs text-brandYellow font-bold">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-brandGold"></span>
+  100% ECZ Grade 7 Examination Target
+</div>
+</div>
+<!-- Quick Navigation - All 9 Tabs -->
+<div class="lg:col-span-2 space-y-3">
+<h4 class="text-sm font-bold text-brandYellow uppercase tracking-wider">Navigation</h4>
+<ul class="space-y-1.5 text-xs text-gray-300 font-medium">
+<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('home')">1. HOME</button></li>
+<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('about-us')">2. ABOUT US</button></li>
+<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('campuses')">3. CAMPUSES</button></li>
+<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('academics')">4. ACADEMICS</button></li>
+<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('school-life')">5. SCHOOL LIFE</button></li>
+<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('fees')">6. FEES &amp; REQ.</button></li>
+<li><button class="hover:text-brandYellow transition text-left text-brandYellow font-bold" onclick="switchMainTab('admissions')">7. ADMISSIONS</button></li>
+<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('questions')">8. QUESTIONS</button></li>
+<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('contact')">9. CONTACT</button></li>
+</ul>
+</div>
+<!-- Meanwood Campus Contact -->
+<div class="lg:col-span-3 space-y-3 p-3 rounded-2xl bg-gray-900 border border-brandGold ring-1 ring-brandGold" id="footer-meanwood-col">
+<h4 class="text-sm font-bold text-brandYellow uppercase tracking-wider flex items-center gap-1.5">
+  Meanwood Campus
+  <span class="text-[10px] bg-amber-500/20 text-brandYellow px-2 py-0.5 rounded-full">Kwamwena</span>
+</h4>
+<p class="text-xs text-gray-300 leading-relaxed">
+  Plot 4812, Kwamwena / Meanwood Ibex Environs,<br>
+  Lusaka East, Zambia.
+</p>
+<div class="text-xs space-y-1 text-gray-400">
+<p><strong class="text-white">Call:</strong> <a class="hover:text-brandYellow text-gray-200" href="tel:+260955802016">+260 955 802 016</a></p>
+<p><strong class="text-white">WhatsApp:</strong> +260 955 802 016</p>
+<p><strong class="text-white">Hours:</strong> 08:00 – 15:00</p>
+<p><strong class="text-white">Routes:</strong> Kwamwena, Ndeke, Vorna Valley, Avondale</p>
+</div>
+</div>
+<!-- PHI Campus Contact -->
+<div class="lg:col-span-3 space-y-3 p-3 rounded-2xl bg-gray-900 border border-gray-800" id="footer-phi-col">
+<h4 class="text-sm font-bold text-brandYellow uppercase tracking-wider flex items-center gap-1.5">
+  PHI Campus
+  <span class="text-[10px] bg-amber-500/20 text-brandYellow px-2 py-0.5 rounded-full">Chainama</span>
+</h4>
+<p class="text-xs text-gray-300 leading-relaxed">
+  Stand 489, PHI Main Residential Area,<br>
+  Off Chainama Road, Lusaka, Zambia.
+</p>
+<div class="text-xs space-y-1 text-gray-400">
+<p><strong class="text-white">Call:</strong> <a class="hover:text-brandYellow text-gray-200" href="tel:+260966495430">+260 966 495 430</a></p>
+<p><strong class="text-white">Hours:</strong> 08:00 – 15:00</p>
+<p><strong class="text-white">Routes:</strong> PHI, Chainama, Munali, Mtendere, Kaunda Square, Chelstone</p>
+</div>
+</div>
+</div>
+<!-- Copyright & Bottom Credit -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+<p>© 2025 Quick Step School Limited. All Rights Reserved. Lusaka, Zambia.</p>
+<div class="flex items-center gap-2.5 bg-white/10 px-3.5 py-1.5 rounded-full border border-white/20">
+<img alt="Quality Websites" class="h-5 w-5 rounded-full object-cover bg-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxhGy10zfyQrjJMWxhCyco7eT6JbLydiF4aJLuSCuBeaPZxZ1TbuXZKf_ISKc2L-4utznyPK4wwST30NcmdxGuLoTC-Sei9Wn6c8HHLqQVAFrZLC0qigbDXcsW8JTi5b6O54b0uU7aFrpJ_jko0OTklfdUhpt8jamIRIZYiJ_QvK3tIpcXGnHdnvyNnVi0JIG6-6TSzpz36L2wqJRPsLqjNp9V_cKLMTCoM6rJOhjIwwsSRUIcPHFnLzxX1C_zahB4Lw">
+<span class="text-xs font-medium text-gray-200">Crafted with excellence by <strong class="text-brandYellow font-semibold">Quality Websites</strong> (Since 2024)</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="hover:underline text-gray-400" onclick="switchMainTab('academics')">Government Curriculum</button>
+<span>•</span>
+<button class="hover:underline text-gray-400" onclick="switchMainTab('admissions')">Admissions</button>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- Interactive Scripts -->
+<script>
+  // 1. Switching between the 9 main tabs
+  function switchMainTab(tabId) {
+    const tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => tab.classList.remove('active'));
+
+    const targetTab = document.getElementById('tab-' + tabId);
+    if (targetTab) {
+      targetTab.classList.add('active');
+    }
+
+    // Update active styles on nav buttons
+    const buttons = document.querySelectorAll('.nav-tab-btn');
+    buttons.forEach(btn => {
+      const target = btn.getAttribute('data-tab-target');
+      if (target === 'admissions') {
+        // Keep gold button look
+        return;
+      }
+      if (target === tabId) {
+        btn.className = 'nav-tab-btn px-2.5 py-1.5 rounded-lg transition-colors text-brandDark border-b-2 border-brandGold font-extrabold';
+      } else {
+        btn.className = 'nav-tab-btn px-2.5 py-1.5 rounded-lg transition-colors hover:text-brandGold text-brandGrey font-bold';
+      }
+    });
+
+    // Smooth scroll to top of window
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // 2. Mobile Menu toggle
+  const mobileToggle = document.getElementById('mobile-menu-toggle');
+  const mobilePanel = document.getElementById('mobile-nav-panel');
+  function toggleMobileMenu() {
+    if (mobilePanel) {
+      mobilePanel.classList.toggle('hidden');
+    }
+  }
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', toggleMobileMenu);
+  }
+
+  // 3. Campuses Tab switcher (Meanwood vs PHI in Campuses Tab)
+  function showCampusDetail(campusKey) {
+    const isMeanwood = campusKey === 'meanwood';
+    const btnMeanwood = document.getElementById('campus-tab-meanwood-btn');
+    const btnPhi = document.getElementById('campus-tab-phi-btn');
+    const viewMeanwood = document.getElementById('view-meanwood-panel');
+    const viewPhi = document.getElementById('view-phi-panel');
+
+    const activeBtnClass = 'px-6 py-2.5 rounded-xl font-black text-xs sm:text-sm transition-all duration-200 bg-brandDark text-brandYellow shadow-sm';
+    const inactiveBtnClass = 'px-6 py-2.5 rounded-xl font-black text-xs sm:text-sm transition-all duration-200 text-brandGrey hover:text-brandDark';
+
+    if (btnMeanwood && btnPhi) {
+      btnMeanwood.className = isMeanwood ? activeBtnClass : inactiveBtnClass;
+      btnPhi.className = !isMeanwood ? activeBtnClass : inactiveBtnClass;
+    }
+    if (viewMeanwood && viewPhi) {
+      if (isMeanwood) {
+        viewMeanwood.classList.remove('hidden');
+        viewPhi.classList.add('hidden');
+      } else {
+        viewPhi.classList.remove('hidden');
+        viewMeanwood.classList.add('hidden');
+      }
+    }
+    // Also sync global top switcher
+    setGlobalCampus(campusKey);
+  }
+
+  // 4. Global Campus Switcher (Meanwood vs PHI)
+  const campusData = {
+    meanwood: {
+      name: 'Meanwood Campus',
+      tag: 'Lusaka East',
+      phone: '+260 955 802 016',
+      telLink: 'tel:+260955802016'
+    },
+    phi: {
+      name: 'PHI Campus',
+      tag: 'Chainama Environs',
+      phone: '+260 966 495 430',
+      telLink: 'tel:+260966495430'
+    }
+  };
+
+  function setGlobalCampus(campusId) {
+    const isMeanwood = campusId === 'meanwood';
+    const active = isMeanwood ? campusData.meanwood : campusData.phi;
+
+    const btnMeanwood = document.getElementById('top-switcher-meanwood');
+    const btnPhi = document.getElementById('top-switcher-phi');
+    const activeTopClass = 'px-3 py-1 rounded-full transition-all duration-200 bg-brandSlate text-brandYellow shadow-sm flex items-center gap-1.5 ring-1 ring-brandYellow';
+    const inactiveTopClass = 'px-3 py-1 rounded-full transition-all duration-200 text-gray-300 hover:text-white flex items-center gap-1.5';
+
+    if (btnMeanwood && btnPhi) {
+      if (isMeanwood) {
+        btnMeanwood.className = activeTopClass;
+        btnMeanwood.innerHTML = '<span class="w-2 h-2 rounded-full bg-brandYellow animate-pulse"></span>Meanwood Campus';
+        btnPhi.className = inactiveTopClass;
+        btnPhi.innerHTML = 'PHI Campus';
+      } else {
+        btnPhi.className = activeTopClass;
+        btnPhi.innerHTML = '<span class="w-2 h-2 rounded-full bg-brandYellow animate-pulse"></span>PHI Campus';
+        btnMeanwood.className = inactiveTopClass;
+        btnMeanwood.innerHTML = 'Meanwood Campus';
+      }
+    }
+
+    const topPhone = document.getElementById('top-campus-phone-1');
+    const topPhoneText = document.getElementById('top-phone-text-1');
+    if (topPhone && topPhoneText) {
+      topPhone.href = active.telLink;
+      topPhoneText.innerText = active.phone;
+    }
+
+    const heroBadge = document.getElementById('hero-campus-badge-name');
+    if (heroBadge) {
+      heroBadge.innerText = active.name;
+    }
+
+    // Highlight corresponding footer column
+    const footMeanwood = document.getElementById('footer-meanwood-col');
+    const footPhi = document.getElementById('footer-phi-col');
+    if (footMeanwood && footPhi) {
+      if (isMeanwood) {
+        footMeanwood.classList.add('border-brandGold', 'ring-1', 'ring-brandGold');
+        footPhi.classList.remove('border-brandGold', 'ring-1', 'ring-brandGold');
+      } else {
+        footPhi.classList.add('border-brandGold', 'ring-1', 'ring-brandGold');
+        footMeanwood.classList.remove('border-brandGold', 'ring-1', 'ring-brandGold');
+      }
+    }
+  }
+
+  document.querySelectorAll('[data-campus-switcher]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const campus = btn.getAttribute('data-campus-switcher');
+      setGlobalCampus(campus);
+    });
+  });
+
+  // 5. Contact Tab Campus Switcher
+  function setContactCampus(campusKey) {
+    const isMeanwood = campusKey === 'meanwood';
+    const btnMeanwood = document.getElementById('contact-btn-meanwood');
+    const btnPhi = document.getElementById('contact-btn-phi');
+    const nameEl = document.getElementById('contact-card-name');
+    const tagEl = document.getElementById('contact-card-tag');
+    const addressEl = document.getElementById('contact-card-address');
+    const phoneEl = document.getElementById('contact-card-phone');
+    const routesEl = document.getElementById('contact-card-routes');
+    const noteEl = document.getElementById('contact-card-location-note');
+    const callBtn = document.getElementById('contact-card-call-btn');
+
+    const activeClass = 'px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 bg-brandDark text-brandYellow shadow-sm';
+    const inactiveClass = 'px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 text-brandGrey hover:text-brandDark';
+
+    if (btnMeanwood && btnPhi) {
+      btnMeanwood.className = isMeanwood ? activeClass : inactiveClass;
+      btnPhi.className = !isMeanwood ? activeClass : inactiveClass;
+    }
+
+    if (isMeanwood) {
+      if (nameEl) nameEl.innerText = 'Meanwood Campus';
+      if (tagEl) tagEl.innerText = 'Lusaka East';
+      if (addressEl) addressEl.innerText = 'Plot 4812, Kwamwena / Meanwood Ibex Environs, Lusaka East';
+      if (phoneEl) { phoneEl.innerText = '+260 955 802 016'; phoneEl.href = 'tel:+260955802016'; }
+      if (routesEl) routesEl.innerText = 'Meanwood Kwamwena, Meanwood Ndeke, Vorna Valley, Avondale';
+      if (noteEl) noteEl.innerText = 'Directions: Located in Kwamwena / Meanwood Ibex area. Signposted from the main access road with easy bus access.';
+      if (callBtn) { callBtn.href = 'tel:+260955802016'; callBtn.innerText = 'Call Campus'; }
+    } else {
+      if (nameEl) nameEl.innerText = 'PHI Campus';
+      if (tagEl) tagEl.innerText = 'Chainama Environs';
+      if (addressEl) addressEl.innerText = 'Stand 489, PHI Main Residential Area, Off Chainama Road, Lusaka';
+      if (phoneEl) { phoneEl.innerText = '+260 966 495 430'; phoneEl.href = 'tel:+260966495430'; }
+      if (routesEl) routesEl.innerText = 'PHI, Chainama, Munali, Mtendere, Kaunda Square, Chelstone';
+      if (noteEl) noteEl.innerText = 'Directions: Situated in the PHI Main residential area, off Chainama Road with dedicated school shuttle stops.';
+      if (callBtn) { callBtn.href = 'tel:+260966495430'; callBtn.innerText = 'Call Campus'; }
+    }
+  }
+
+  // 6. Accordion toggle for FAQ (Questions tab)
+  document.addEventListener('click', function(e) {
+    const btn = e.target.closest('.faq-accordion-btn');
+    if (btn) {
+      const content = btn.nextElementSibling;
+      if (content) {
+        content.classList.toggle('hidden');
+        const icon = btn.querySelector('span:last-child');
+        if (icon) {
+          icon.textContent = content.classList.contains('hidden') ? '+' : '−';
+        }
+      }
+    }
+  });
+
+  // Default campus selection
+  setGlobalCampus('meanwood');
+</script>
+</body></html>
