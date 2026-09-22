@@ -57,30 +57,23 @@
 <!-- BEGIN: TopBar -->
 <div class="bg-brandDark text-white py-2 px-4 sm:px-8 text-xs font-medium border-b border-brandSlate transition-all" data-purpose="announcement-top-bar">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-3">
-<!-- Campuses & Motto -->
-<div class="flex flex-wrap items-center gap-2 sm:gap-3">
+<!-- Both campuses, always visible -->
+<div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
 <span class="text-[11px] font-bold text-brandYellow uppercase tracking-wider flex items-center gap-1.5">
 <svg class="w-3.5 h-3.5 text-brandYellow" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
-  Meanwood &amp; PHI, Lusaka
+  Two Campuses:
 </span>
-<span class="hidden lg:inline text-gray-500">|</span>
-<span class="hidden lg:inline text-gray-300 font-normal italic" id="top-slogan">
-  “Quality Education for your Education is Our Priority”
+<span class="inline-flex items-center rounded-full border border-gray-700 bg-black/30 overflow-hidden">
+<button class="px-2.5 py-1 font-bold text-white hover:text-brandYellow transition" onclick="goToCampus('meanwood')" type="button"><span class="text-brandYellow">1</span> · Meanwood</button>
+<a class="px-2.5 py-1 border-l border-gray-700 text-gray-300 hover:text-brandYellow transition" href="tel:+260955802016">+260 955 802 016</a>
+</span>
+<span class="inline-flex items-center rounded-full border border-gray-700 bg-black/30 overflow-hidden">
+<button class="px-2.5 py-1 font-bold text-white hover:text-brandYellow transition" onclick="goToCampus('phi')" type="button"><span class="text-brandYellow">2</span> · PHI</button>
+<a class="px-2.5 py-1 border-l border-gray-700 text-gray-300 hover:text-brandYellow transition" href="tel:+260966495430">+260 966 495 430</a>
 </span>
 </div>
-<!-- Phone, Hours & Direct WhatsApp -->
+<!-- Direct WhatsApp -->
 <div class="flex items-center flex-wrap gap-3 sm:gap-4 text-xs">
-<div class="flex items-center gap-2 sm:gap-3">
-<a class="hover:text-brandYellow transition-colors flex items-center gap-1 text-gray-200 font-medium" href="tel:+260955802016" id="top-campus-phone-1">
-<svg class="w-3.5 h-3.5 text-brandYellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-<span id="top-phone-text-1">+260 955 802 016</span>
-</a>
-<span class="text-gray-600">/</span>
-<a class="hover:text-brandYellow transition-colors hidden sm:inline text-gray-300 font-medium" href="tel:+260966495430" id="top-campus-phone-2">
-  +260 966 495 430
-</a>
-</div>
-<span class="hidden md:inline text-gray-600">|</span>
 <a class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1 rounded-full font-bold shadow-sm transition" href="https://wa.me/260955802016" rel="noopener noreferrer" target="_blank">
 <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"></path></svg>
   WhatsApp
@@ -153,7 +146,7 @@
 <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
 <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-300 px-4 py-1.5 rounded-full text-xs font-bold text-amber-900 shadow-sm">
 <span class="w-2 h-2 rounded-full bg-brandGold"></span>
-  Nursery &amp; Grade 1 to 7 · Government Curriculum
+  Two Lusaka Campuses: Meanwood &amp; PHI · Nursery to Grade 7
 </div>
 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-brandDark leading-tight tracking-tight">
   We Prepare Your <br>
@@ -202,27 +195,93 @@
 </span>
 </div>
 </div>
-<!-- Hero Graphic Column with Classroom Photo -->
-<div class="lg:col-span-6 relative flex justify-center items-center">
+<!-- Hero Graphic: one photo from each campus -->
+<div class="lg:col-span-6 relative flex justify-center items-center pb-10 sm:pb-6">
 <div class="w-72 h-72 sm:w-96 sm:h-96 lg:w-[440px] lg:h-[440px] bg-gradient-to-tr from-amber-500 via-brandGold to-yellow-400 blob-clip-hero p-3.5 shadow-2xl flex items-center justify-center relative">
 <div class="w-full h-full rounded-[45%_55%_65%_35%/50%_50%_50%_50%] overflow-hidden bg-white relative">
 <img alt="Quick Step pupils in graduation gowns lining up in the Meanwood campus courtyard" class="w-full h-full object-cover" src="images/meanwood-graduation-lineup.jpg">
 </div>
+<!-- Campus 1 label -->
+<button class="absolute top-6 -left-4 bg-brandDark text-white px-4 py-2 rounded-2xl shadow-xl text-left border-2 border-brandGold hover:-translate-y-0.5 transition" onclick="goToCampus('meanwood')" type="button">
+<p class="text-[10px] text-gray-300 uppercase tracking-wider">Campus 1</p>
+<p class="text-xs font-extrabold text-brandYellow uppercase">Meanwood</p>
+</button>
+<!-- Campus 2: inset photo + label -->
+<button class="absolute -bottom-10 -right-4 sm:-right-8 flex flex-col items-center group" onclick="goToCampus('phi')" type="button">
+<span class="block w-32 h-32 sm:w-44 sm:h-44 rounded-full overflow-hidden border-[6px] border-white shadow-2xl ring-4 ring-brandGold group-hover:-translate-y-0.5 transition">
+<img alt="Pupils writing in their exercise books at the PHI campus" class="w-full h-full object-cover" src="images/phi-classroom-writing.jpg">
+</span>
+<span class="-mt-4 bg-brandDark text-white px-4 py-2 rounded-2xl shadow-xl text-left border-2 border-brandGold">
+<span class="block text-[10px] text-gray-300 uppercase tracking-wider">Campus 2</span>
+<span class="block text-xs font-extrabold text-brandYellow uppercase">PHI</span>
+</span>
+</button>
+<!-- Fees -->
 <div class="absolute -bottom-4 -left-4 bg-white p-3.5 rounded-2xl shadow-xl border border-gray-200 flex items-center gap-3">
 <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-brandGold font-black text-sm">
   K800+
 </div>
 <div>
 <p class="text-xs font-bold text-brandDark">Fees K800 – K2,100</p>
-<p class="text-[11px] text-brandMuted">Depends on your child's grade</p>
-</div>
-</div>
-<div class="absolute top-6 -right-4 bg-brandDark text-white px-4 py-2 rounded-2xl shadow-xl text-center border-2 border-brandGold">
-<p class="text-xs font-extrabold text-brandYellow uppercase" id="hero-campus-badge-name">Meanwood Campus</p>
-<p class="text-[10px] text-gray-300">Lusaka</p>
+<p class="text-[11px] text-brandMuted">At both campuses</p>
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Two Campuses -->
+<section class="py-14 bg-brandDark text-white border-b-4 border-brandGold">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="text-xs font-bold text-brandYellow uppercase tracking-wider bg-brandSlate px-3.5 py-1 rounded-full border border-gray-700">Our Campuses</span>
+<h2 class="text-2xl sm:text-4xl font-black mt-3">One School, Two Campuses</h2>
+<p class="text-xs sm:text-sm text-gray-300 mt-2">The same school, curriculum and fees at both. Choose the campus closest to you.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Campus 1 -->
+<article class="bg-white text-brandGrey rounded-3xl overflow-hidden shadow-xl flex flex-col">
+<div class="relative h-56 sm:h-64">
+<img alt="The Meanwood campus courtyard and classroom blocks, with the school bus parked inside" class="w-full h-full object-cover object-[center_60%]" src="images/meanwood-entrance-school-bus.jpg">
+<span class="absolute top-4 left-4 bg-brandDark text-brandYellow text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-full border-2 border-brandGold">Campus 1</span>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="text-2xl font-black text-brandDark">Meanwood Campus</h3>
+<p class="text-sm text-brandMuted">Meanwood, Lusaka</p>
+<ul class="mt-4 space-y-2 text-sm flex-1">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-brandGold text-lg">school</span>Nursery and Grade 1 to 7</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-brandGold text-lg">schedule</span>08:00 – 15:00</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-brandGold text-lg">call</span><a class="font-bold text-brandDark hover:text-brandGold" href="tel:+260955802016">+260 955 802 016</a></li>
+</ul>
+<div class="mt-5 flex flex-wrap gap-2">
+<button class="px-5 py-2.5 rounded-full bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs shadow transition" onclick="goToCampus('meanwood')" type="button">View Meanwood Campus</button>
+<a class="px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition" href="https://wa.me/260955802016?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20the%20Meanwood%20campus." rel="noopener" target="_blank">WhatsApp</a>
+<a class="px-5 py-2.5 rounded-full border-2 border-brandDark text-brandDark hover:bg-brandDark hover:text-white font-bold text-xs transition" href="tel:+260955802016">Call</a>
+</div>
+</div>
+</article>
+<!-- Campus 2 -->
+<article class="bg-white text-brandGrey rounded-3xl overflow-hidden shadow-xl flex flex-col">
+<div class="relative h-56 sm:h-64">
+<img alt="Pupils at their desks during snack time at the PHI campus" class="w-full h-full object-cover" src="images/phi-snack-time.jpg">
+<span class="absolute top-4 left-4 bg-brandDark text-brandYellow text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-full border-2 border-brandGold">Campus 2</span>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<h3 class="text-2xl font-black text-brandDark">PHI Campus</h3>
+<p class="text-sm text-brandMuted">PHI, Lusaka</p>
+<ul class="mt-4 space-y-2 text-sm flex-1">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-brandGold text-lg">school</span>Nursery and Grade 1 to 7</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-brandGold text-lg">schedule</span>08:00 – 15:00</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-brandGold text-lg">call</span><a class="font-bold text-brandDark hover:text-brandGold" href="tel:+260966495430">+260 966 495 430</a></li>
+</ul>
+<div class="mt-5 flex flex-wrap gap-2">
+<button class="px-5 py-2.5 rounded-full bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs shadow transition" onclick="goToCampus('phi')" type="button">View PHI Campus</button>
+<a class="px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition" href="https://wa.me/260955802016?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20the%20PHI%20campus." rel="noopener" target="_blank">WhatsApp</a>
+<a class="px-5 py-2.5 rounded-full border-2 border-brandDark text-brandDark hover:bg-brandDark hover:text-white font-bold text-xs transition" href="tel:+260966495430">Call</a>
+</div>
+</div>
+</article>
 </div>
 </div>
 </section>
@@ -393,18 +452,18 @@
 </div>
 </section>
 <section class="py-12 bg-gray-50 border-b border-gray-200">
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center mb-8">
-<span class="text-xs font-bold uppercase tracking-wider text-brandGold bg-white px-3 py-1 rounded-full border border-gray-200">Choose a Campus</span>
-<h2 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">Select a Campus to View Details</h2>
-<div class="mt-4 inline-flex p-1 bg-white rounded-2xl border border-gray-300 shadow-sm gap-1" role="tablist">
-<button class="px-6 py-2.5 rounded-xl font-black text-xs sm:text-sm transition-all duration-200 bg-brandDark text-brandYellow shadow-sm" id="campus-tab-meanwood-btn" onclick="showCampusDetail('meanwood')" type="button">MEANWOOD CAMPUS</button>
-<button class="px-6 py-2.5 rounded-xl font-black text-xs sm:text-sm transition-all duration-200 text-brandGrey hover:text-brandDark" id="campus-tab-phi-btn" onclick="showCampusDetail('phi')" type="button">PHI CAMPUS</button>
+<span class="text-xs font-bold uppercase tracking-wider text-brandGold bg-white px-3 py-1 rounded-full border border-gray-200">Both Campuses</span>
+<h2 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">Meanwood and PHI</h2>
+<p class="text-xs sm:text-sm text-brandMuted mt-1">The same school, curriculum and fees at both campuses.</p>
 </div>
-</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
 <!-- Meanwood Campus Card View -->
-<div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-brandGold shadow-md" id="view-meanwood-panel">
-<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-4 border-b border-gray-100 gap-3">
+<div class="bg-white rounded-3xl overflow-hidden border-2 border-brandGold shadow-md flex flex-col scroll-mt-28 transition" id="view-meanwood-panel">
+<img alt="A classroom block at the Meanwood campus" class="w-full h-56 object-cover object-[center_60%]" src="images/meanwood-classroom-block.jpg">
+<div class="p-6 sm:p-8 flex flex-col flex-1">
+<div class="flex flex-col items-start justify-between pb-4 border-b border-gray-100 gap-3">
 <div>
 <span class="text-xs font-black text-brandGold uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Campus 1 · Lusaka</span>
 <h3 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">Meanwood Campus</h3>
@@ -414,7 +473,7 @@
 <a class="px-4 py-2 bg-brandDark hover:bg-brandSlate text-white font-bold text-xs rounded-full transition" href="tel:+260955802016">Call +260 955 802 016</a>
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-xs sm:text-sm">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 text-xs sm:text-sm flex-1">
 <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
 <strong class="text-brandDark block mb-1">Location</strong>
 <span>Meanwood, Lusaka. WhatsApp us for directions.</span>
@@ -433,13 +492,16 @@
 </div>
 </div>
 <div class="mt-6 pt-4 border-t border-gray-100 flex flex-wrap gap-3">
-<button class="px-6 py-2.5 bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs rounded-full shadow transition" onclick="switchMainTab('admissions')">Apply for Meanwood Campus</button>
+<button class="px-6 py-2.5 bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs rounded-full shadow transition" onclick="applyForCampus('Meanwood Campus')">Apply for Meanwood Campus</button>
 <a class="px-6 py-2.5 bg-gray-100 hover:bg-gray-200 text-brandDark font-bold text-xs rounded-full transition" href="https://wa.me/260955802016?text=Hello%2C%20please%20send%20me%20directions%20to%20the%20Meanwood%20campus." target="_blank" rel="noopener">Ask for Directions</a>
 </div>
 </div>
+</div>
 <!-- PHI Campus Card View -->
-<div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-brandGold shadow-md hidden" id="view-phi-panel">
-<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-4 border-b border-gray-100 gap-3">
+<div class="bg-white rounded-3xl overflow-hidden border-2 border-brandGold shadow-md flex flex-col scroll-mt-28 transition" id="view-phi-panel">
+<img alt="Nursery children playing with building blocks at the PHI campus" class="w-full h-56 object-cover object-[center_60%]" src="images/phi-nursery-playroom.jpg">
+<div class="p-6 sm:p-8 flex flex-col flex-1">
+<div class="flex flex-col items-start justify-between pb-4 border-b border-gray-100 gap-3">
 <div>
 <span class="text-xs font-black text-brandGold uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Campus 2 · Lusaka</span>
 <h3 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">PHI Campus</h3>
@@ -449,7 +511,7 @@
 <a class="px-4 py-2 bg-brandDark hover:bg-brandSlate text-white font-bold text-xs rounded-full transition" href="tel:+260966495430">Call +260 966 495 430</a>
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 text-xs sm:text-sm">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 text-xs sm:text-sm flex-1">
 <div class="p-4 bg-gray-50 rounded-2xl border border-gray-200">
 <strong class="text-brandDark block mb-1">Location</strong>
 <span>PHI, Lusaka. WhatsApp us for directions.</span>
@@ -468,8 +530,10 @@
 </div>
 </div>
 <div class="mt-6 pt-4 border-t border-gray-100 flex flex-wrap gap-3">
-<button class="px-6 py-2.5 bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs rounded-full shadow transition" onclick="switchMainTab('admissions')">Apply for PHI Campus</button>
+<button class="px-6 py-2.5 bg-brandGold hover:bg-brandYellow text-white font-extrabold text-xs rounded-full shadow transition" onclick="applyForCampus('PHI Campus')">Apply for PHI Campus</button>
 <a class="px-6 py-2.5 bg-gray-100 hover:bg-gray-200 text-brandDark font-bold text-xs rounded-full transition" href="https://wa.me/260955802016?text=Hello%2C%20please%20send%20me%20directions%20to%20the%20PHI%20campus." target="_blank" rel="noopener">Ask for Directions</a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -975,42 +1039,46 @@
 </div>
 </div>
 </section>
-<!-- Campus Information Toggle -->
+<!-- Campus Directory: both campuses side by side -->
 <section class="py-12 bg-white border-b border-gray-200">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center mb-6">
 <span class="text-xs font-bold uppercase tracking-wider text-brandGold bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Campus Contact Details</span>
 <h2 class="text-2xl sm:text-3xl font-black text-brandDark mt-2">CAMPUS DIRECTORY</h2>
-<div class="mt-4 inline-flex p-1 bg-white rounded-2xl border border-gray-300 shadow-sm gap-1" role="tablist">
-<button class="px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 bg-brandDark text-brandYellow shadow-sm" id="contact-btn-meanwood" onclick="setContactCampus('meanwood')" type="button">MEANWOOD</button>
-<button class="px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 text-brandGrey hover:text-brandDark" id="contact-btn-phi" onclick="setContactCampus('phi')" type="button">PHI</button>
+<p class="text-xs text-brandMuted mt-1">Term dates at both campuses follow the Zambian government school calendar.</p>
 </div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-gray-50 rounded-3xl p-6 sm:p-8 border-2 border-brandGold shadow-md" id="contact-campus-card">
-<div class="space-y-3">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-gray-50 rounded-3xl p-6 sm:p-8 border-2 border-brandGold shadow-md space-y-3">
 <div class="flex items-center justify-between">
-<h3 class="text-xl font-black text-brandDark" id="contact-card-name">Meanwood Campus</h3>
-<span class="bg-amber-100 text-brandGold font-bold text-xs px-3 py-1 rounded-full" id="contact-card-tag">Campus 1</span>
+<h3 class="text-xl font-black text-brandDark">Meanwood Campus</h3>
+<span class="bg-amber-100 text-brandGold font-bold text-xs px-3 py-1 rounded-full">Campus 1</span>
 </div>
 <div class="space-y-2 text-xs sm:text-sm text-brandGrey">
-<p><strong>Location:</strong> <span id="contact-card-address">Meanwood, Lusaka</span></p>
-<p><strong>Phone:</strong> <a class="font-bold text-brandDark hover:text-brandGold transition" href="tel:+260955802016" id="contact-card-phone">+260 955 802 016</a></p>
+<p><strong>Location:</strong> Meanwood, Lusaka</p>
+<p><strong>Phone:</strong> <a class="font-bold text-brandDark hover:text-brandGold transition" href="tel:+260955802016">+260 955 802 016</a></p>
 <p><strong>WhatsApp:</strong> +260 955 802 016</p>
 <p><strong>Hours:</strong> 08:00 – 15:00</p>
 </div>
 <div class="pt-2 flex flex-wrap gap-2">
-<a class="px-4 py-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition" href="https://wa.me/260955802016" target="_blank">WhatsApp Campus</a>
-<a class="px-4 py-2 rounded-full bg-brandDark hover:bg-brandSlate text-white font-bold text-xs transition" href="tel:+260955802016" id="contact-card-call-btn">Call Campus</a>
+<a class="px-4 py-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition" href="https://wa.me/260955802016?text=Hello%2C%20please%20send%20me%20directions%20to%20the%20Meanwood%20campus." rel="noopener" target="_blank">WhatsApp for Directions</a>
+<a class="px-4 py-2 rounded-full bg-brandDark hover:bg-brandSlate text-white font-bold text-xs transition" href="tel:+260955802016">Call Meanwood</a>
 </div>
 </div>
-<div class="bg-white rounded-2xl p-5 border border-gray-200 flex flex-col justify-between">
-<div>
-<h4 class="font-black text-brandDark text-sm mb-1.5 flex items-center gap-1.5"><span class="material-symbols-outlined text-brandGold text-lg">location_on</span> Directions</h4>
-<p class="text-xs text-brandMuted leading-relaxed" id="contact-card-location-note">Send us a WhatsApp message and we'll share directions to the Meanwood campus.</p>
+<div class="bg-gray-50 rounded-3xl p-6 sm:p-8 border-2 border-brandGold shadow-md space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="text-xl font-black text-brandDark">PHI Campus</h3>
+<span class="bg-amber-100 text-brandGold font-bold text-xs px-3 py-1 rounded-full">Campus 2</span>
 </div>
-<div class="mt-3 p-2.5 bg-amber-50 rounded-xl border border-amber-200 text-[11px] text-amber-900 font-medium">
-          Term dates follow the Zambian government school calendar.
-        </div>
+<div class="space-y-2 text-xs sm:text-sm text-brandGrey">
+<p><strong>Location:</strong> PHI, Lusaka</p>
+<p><strong>Phone:</strong> <a class="font-bold text-brandDark hover:text-brandGold transition" href="tel:+260966495430">+260 966 495 430</a></p>
+<p><strong>WhatsApp:</strong> +260 955 802 016</p>
+<p><strong>Hours:</strong> 08:00 – 15:00</p>
+</div>
+<div class="pt-2 flex flex-wrap gap-2">
+<a class="px-4 py-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition" href="https://wa.me/260955802016?text=Hello%2C%20please%20send%20me%20directions%20to%20the%20PHI%20campus." rel="noopener" target="_blank">WhatsApp for Directions</a>
+<a class="px-4 py-2 rounded-full bg-brandDark hover:bg-brandSlate text-white font-bold text-xs transition" href="tel:+260966495430">Call PHI</a>
+</div>
 </div>
 </div>
 </div>
@@ -1177,67 +1245,23 @@
     mobileToggle.addEventListener('click', toggleMobileMenu);
   }
 
-  // 3. Campuses Tab switcher (Meanwood vs PHI in Campuses Tab)
-  function showCampusDetail(campusKey) {
-    const isMeanwood = campusKey === 'meanwood';
-    const btnMeanwood = document.getElementById('campus-tab-meanwood-btn');
-    const btnPhi = document.getElementById('campus-tab-phi-btn');
-    const viewMeanwood = document.getElementById('view-meanwood-panel');
-    const viewPhi = document.getElementById('view-phi-panel');
-
-    const activeBtnClass = 'px-6 py-2.5 rounded-xl font-black text-xs sm:text-sm transition-all duration-200 bg-brandDark text-brandYellow shadow-sm';
-    const inactiveBtnClass = 'px-6 py-2.5 rounded-xl font-black text-xs sm:text-sm transition-all duration-200 text-brandGrey hover:text-brandDark';
-
-    if (btnMeanwood && btnPhi) {
-      btnMeanwood.className = isMeanwood ? activeBtnClass : inactiveBtnClass;
-      btnPhi.className = !isMeanwood ? activeBtnClass : inactiveBtnClass;
-    }
-    if (viewMeanwood && viewPhi) {
-      if (isMeanwood) {
-        viewMeanwood.classList.remove('hidden');
-        viewPhi.classList.add('hidden');
-      } else {
-        viewPhi.classList.remove('hidden');
-        viewMeanwood.classList.add('hidden');
-      }
-    }
+  // 3. Jump to a campus card on the Campuses tab and briefly highlight it
+  function goToCampus(campusKey) {
+    switchMainTab('campuses');
+    const card = document.getElementById('view-' + campusKey + '-panel');
+    if (!card) return;
+    setTimeout(() => {
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      card.classList.add('ring-4', 'ring-brandGold/60');
+      setTimeout(() => card.classList.remove('ring-4', 'ring-brandGold/60'), 1600);
+    }, 50);
   }
 
-  // 4. Contact Tab Campus Switcher
-  function setContactCampus(campusKey) {
-    const isMeanwood = campusKey === 'meanwood';
-    const btnMeanwood = document.getElementById('contact-btn-meanwood');
-    const btnPhi = document.getElementById('contact-btn-phi');
-    const nameEl = document.getElementById('contact-card-name');
-    const tagEl = document.getElementById('contact-card-tag');
-    const addressEl = document.getElementById('contact-card-address');
-    const phoneEl = document.getElementById('contact-card-phone');
-    const noteEl = document.getElementById('contact-card-location-note');
-    const callBtn = document.getElementById('contact-card-call-btn');
-
-    const activeClass = 'px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 bg-brandDark text-brandYellow shadow-sm';
-    const inactiveClass = 'px-5 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 text-brandGrey hover:text-brandDark';
-
-    if (btnMeanwood && btnPhi) {
-      btnMeanwood.className = isMeanwood ? activeClass : inactiveClass;
-      btnPhi.className = !isMeanwood ? activeClass : inactiveClass;
-    }
-
-    if (isMeanwood) {
-      if (nameEl) nameEl.innerText = 'Meanwood Campus';
-      if (tagEl) tagEl.innerText = 'Campus 1';
-      if (addressEl) addressEl.innerText = 'Meanwood, Lusaka';
-      if (phoneEl) { phoneEl.innerText = '+260 955 802 016'; phoneEl.href = 'tel:+260955802016'; }
-      if (noteEl) noteEl.innerText = "Send us a WhatsApp message and we'll share directions to the Meanwood campus.";
-      if (callBtn) { callBtn.href = 'tel:+260955802016'; callBtn.innerText = 'Call Campus'; }
-    } else {
-      if (nameEl) nameEl.innerText = 'PHI Campus';
-      if (tagEl) tagEl.innerText = 'Campus 2';
-      if (addressEl) addressEl.innerText = 'PHI, Lusaka';
-      if (phoneEl) { phoneEl.innerText = '+260 966 495 430'; phoneEl.href = 'tel:+260966495430'; }
-      if (noteEl) noteEl.innerText = "Send us a WhatsApp message and we'll share directions to the PHI campus.";
-      if (callBtn) { callBtn.href = 'tel:+260966495430'; callBtn.innerText = 'Call Campus'; }
-    }
+  // Open the admissions form with a campus already chosen
+  function applyForCampus(campusName) {
+    switchMainTab('admissions');
+    const select = document.getElementById('adm-campus');
+    if (select) select.value = campusName;
   }
 
   // Enquiry forms open WhatsApp with the message filled in; nothing is sent or stored by the site
@@ -1266,7 +1290,7 @@
     ]);
   }
 
-  // 5. Accordion toggle for FAQ (Questions tab)
+  // 4. Accordion toggle for FAQ (Questions tab)
   document.addEventListener('click', function(e) {
     const btn = e.target.closest('.faq-accordion-btn');
     if (btn) {
