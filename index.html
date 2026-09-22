@@ -1127,15 +1127,15 @@
 <div class="lg:col-span-2 space-y-3">
 <h4 class="text-sm font-bold text-brandYellow uppercase tracking-wider">Navigation</h4>
 <ul class="space-y-1.5 text-xs text-gray-300 font-medium">
-<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('home')">1. HOME</button></li>
-<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('about-us')">2. ABOUT US</button></li>
-<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('campuses')">3. CAMPUSES</button></li>
-<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('academics')">4. ACADEMICS</button></li>
-<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('school-life')">5. SCHOOL LIFE</button></li>
-<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('fees')">6. FEES &amp; REQ.</button></li>
-<li><button class="hover:text-brandYellow transition text-left text-brandYellow font-bold" onclick="switchMainTab('admissions')">7. ADMISSIONS</button></li>
-<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('questions')">8. QUESTIONS</button></li>
-<li><button class="hover:text-brandYellow transition text-left" onclick="switchMainTab('contact')">9. CONTACT</button></li>
+<li><button class="footer-tab-btn hover:text-brandYellow transition text-left text-brandYellow font-bold" data-footer-tab="home" onclick="switchMainTab('home')">1. HOME</button></li>
+<li><button class="footer-tab-btn hover:text-brandYellow transition text-left" data-footer-tab="about-us" onclick="switchMainTab('about-us')">2. ABOUT US</button></li>
+<li><button class="footer-tab-btn hover:text-brandYellow transition text-left" data-footer-tab="campuses" onclick="switchMainTab('campuses')">3. CAMPUSES</button></li>
+<li><button class="footer-tab-btn hover:text-brandYellow transition text-left" data-footer-tab="academics" onclick="switchMainTab('academics')">4. ACADEMICS</button></li>
+<li><button class="footer-tab-btn hover:text-brandYellow transition text-left" data-footer-tab="school-life" onclick="switchMainTab('school-life')">5. SCHOOL LIFE</button></li>
+<li><button class="footer-tab-btn hover:text-brandYellow transition text-left" data-footer-tab="fees" onclick="switchMainTab('fees')">6. FEES &amp; REQ.</button></li>
+<li><button class="footer-tab-btn hover:text-brandYellow transition text-left" data-footer-tab="admissions" onclick="switchMainTab('admissions')">7. ADMISSIONS</button></li>
+<li><button class="footer-tab-btn hover:text-brandYellow transition text-left" data-footer-tab="questions" onclick="switchMainTab('questions')">8. QUESTIONS</button></li>
+<li><button class="footer-tab-btn hover:text-brandYellow transition text-left" data-footer-tab="contact" onclick="switchMainTab('contact')">9. CONTACT</button></li>
 </ul>
 </div>
 <!-- Meanwood Campus Contact -->
@@ -1213,6 +1213,13 @@
       } else {
         btn.className = 'nav-tab-btn px-2.5 py-1.5 rounded-lg transition-colors hover:text-brandGold text-brandGrey font-bold';
       }
+    });
+
+    // Highlight the current tab in the footer navigation
+    document.querySelectorAll('.footer-tab-btn').forEach(btn => {
+      const isActive = btn.getAttribute('data-footer-tab') === tabId;
+      btn.classList.toggle('text-brandYellow', isActive);
+      btn.classList.toggle('font-bold', isActive);
     });
 
     // Smooth scroll to top of window
