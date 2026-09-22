@@ -1,0 +1,16 @@
+{
+  "name": "quick-step-school-site",
+  "private": true,
+  "description": "Quick Step School Limited website (Meanwood & PHI, Lusaka)",
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i src/input.css -o assets/styles.css --minify",
+    "watch:css": "tailwindcss -c tailwind.config.js -i src/input.css -o assets/styles.css --watch",
+    "build:images": "node tools/build-images.js",
+    "build": "npm run build:images && npm run build:css"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.11",
+    "sharp": "^0.35.4",
+    "tailwindcss": "^3.4.19"
+  }
+}
